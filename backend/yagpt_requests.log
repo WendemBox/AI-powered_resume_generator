@@ -1,0 +1,247 @@
+2025-04-08 15:48:12,095 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-08 15:48:12,095 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-08 15:48:12,097 - werkzeug - INFO -  * Restarting with stat
+2025-04-08 15:48:12,644 - werkzeug - WARNING -  * Debugger is active!
+2025-04-08 15:48:12,644 - werkzeug - INFO -  * Debugger PIN: 786-309-082
+2025-04-08 15:52:00,221 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-08 15:52:00,221 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-08 15:52:00,225 - werkzeug - INFO -  * Restarting with stat
+2025-04-08 15:52:00,794 - werkzeug - WARNING -  * Debugger is active!
+2025-04-08 15:52:00,795 - werkzeug - INFO -  * Debugger PIN: 786-309-082
+2025-04-08 16:03:27,378 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.14:5000
+2025-04-08 16:03:27,378 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-08 16:03:27,379 - werkzeug - INFO -  * Restarting with stat
+2025-04-08 16:03:27,917 - werkzeug - WARNING -  * Debugger is active!
+2025-04-08 16:03:27,918 - werkzeug - INFO -  * Debugger PIN: 786-309-082
+2025-04-08 16:04:55,631 - werkzeug - INFO - 192.168.0.10 - - [08/Apr/2025 16:04:55] "[35m[1mPOST /api/generate-resume HTTP/1.1[0m" 500 -
+2025-04-08 16:08:41,775 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.14:5000
+2025-04-08 16:08:41,775 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-08 16:08:41,776 - werkzeug - INFO -  * Restarting with stat
+2025-04-08 16:08:42,474 - werkzeug - WARNING -  * Debugger is active!
+2025-04-08 16:08:42,476 - werkzeug - INFO -  * Debugger PIN: 786-309-082
+2025-04-08 16:11:30,280 - werkzeug - INFO - 192.168.0.10 - - [08/Apr/2025 16:11:30] "[35m[1mPOST /api/generate-resume HTTP/1.1[0m" 500 -
+2025-04-08 16:16:56,905 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.14:5000
+2025-04-08 16:16:56,905 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-08 16:16:56,906 - werkzeug - INFO -  * Restarting with stat
+2025-04-08 16:16:57,374 - werkzeug - WARNING -  * Debugger is active!
+2025-04-08 16:16:57,374 - werkzeug - INFO -  * Debugger PIN: 786-309-082
+2025-04-08 16:17:57,386 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-08 16:18:01,515 - werkzeug - INFO - 192.168.0.10 - - [08/Apr/2025 16:18:01] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-08 16:22:27,873 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.14:5000
+2025-04-08 16:22:27,873 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-08 16:22:27,874 - werkzeug - INFO -  * Restarting with stat
+2025-04-08 16:22:28,337 - werkzeug - WARNING -  * Debugger is active!
+2025-04-08 16:22:28,338 - werkzeug - INFO -  * Debugger PIN: 786-309-082
+2025-04-08 16:23:19,656 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 16:23:19] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+2025-04-08 16:23:19,659 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 16:23:19] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+2025-04-08 16:23:19,663 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 16:23:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-08 16:23:22,476 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 16:23:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-08 16:25:06,787 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-08 16:25:09,863 - werkzeug - INFO - 192.168.0.10 - - [08/Apr/2025 16:25:09] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-08 16:26:19,812 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-08 16:26:22,733 - werkzeug - INFO - 192.168.0.10 - - [08/Apr/2025 16:26:22] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-08 16:27:14,185 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-08 16:27:17,414 - werkzeug - INFO - 192.168.0.10 - - [08/Apr/2025 16:27:17] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-08 16:31:25,415 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 16:31:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-08 16:31:27,522 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 16:31:27] "OPTIONS /api/generate-resume HTTP/1.1" 200 -
+2025-04-08 16:33:53,921 - werkzeug - INFO - 192.168.0.10 - - [08/Apr/2025 16:33:53] "[33mGET / HTTP/1.1[0m" 404 -
+2025-04-08 16:33:54,009 - werkzeug - INFO - 192.168.0.10 - - [08/Apr/2025 16:33:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-14 15:42:34,194 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.14:5000
+2025-04-14 15:42:34,194 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-14 15:42:34,195 - werkzeug - INFO -  * Restarting with stat
+2025-04-14 15:42:34,628 - werkzeug - WARNING -  * Debugger is active!
+2025-04-14 15:42:34,633 - werkzeug - INFO -  * Debugger PIN: 571-313-961
+2025-04-14 15:43:05,866 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-14 15:43:08,623 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 15:43:08] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 15:44:18,159 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-14 15:44:20,771 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 15:44:20] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 15:44:22,306 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-14 15:44:24,997 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 15:44:24] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 15:44:32,581 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 15:44:32] "[35m[1mPOST /api/generate-resume HTTP/1.1[0m" 500 -
+2025-04-14 15:44:55,670 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 15:44:55] "[35m[1mPOST /api/generate-resume HTTP/1.1[0m" 500 -
+2025-04-14 15:45:57,566 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 15:45:57] "[35m[1mPOST /api/generate-resume HTTP/1.1[0m" 500 -
+2025-04-14 15:46:26,497 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-14 15:46:29,306 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 15:46:29] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 15:46:36,221 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-14 15:46:39,157 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 15:46:39] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 15:47:32,794 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-14 15:47:36,002 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 15:47:36] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 15:52:17,795 - werkzeug - INFO -  * Detected change in '/home/wendembox/vkr/backend/app.py', reloading
+2025-04-14 15:52:17,899 - werkzeug - INFO -  * Restarting with stat
+2025-04-14 15:52:18,339 - werkzeug - WARNING -  * Debugger is active!
+2025-04-14 15:52:18,340 - werkzeug - INFO -  * Debugger PIN: 571-313-961
+2025-04-14 15:52:23,942 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.14:5000
+2025-04-14 15:52:23,943 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-14 15:52:23,944 - werkzeug - INFO -  * Restarting with stat
+2025-04-14 15:52:24,357 - werkzeug - WARNING -  * Debugger is active!
+2025-04-14 15:52:24,357 - werkzeug - INFO -  * Debugger PIN: 571-313-961
+2025-04-14 15:54:24,877 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.14:5000
+2025-04-14 15:54:24,878 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-14 15:54:24,879 - werkzeug - INFO -  * Restarting with stat
+2025-04-14 15:54:25,301 - werkzeug - WARNING -  * Debugger is active!
+2025-04-14 15:54:25,301 - werkzeug - INFO -  * Debugger PIN: 940-762-772
+2025-04-14 15:56:14,198 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 15:56:14] "GET /api/health HTTP/1.1" 200 -
+2025-04-14 15:56:30,828 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-14 15:56:30,828 - __main__ - INFO - Received data: {'user_data': {'name': 'Тест'}, 'resume_type': 'standard'}
+2025-04-14 15:56:30,829 - __main__ - INFO - Generating resume with type: standard
+2025-04-14 15:56:31,181 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-14 15:56:34,389 - __main__ - INFO - Resume generated successfully
+2025-04-14 15:56:34,390 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 15:56:34] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 15:56:38,221 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 15:56:38] "GET /api/health HTTP/1.1" 200 -
+2025-04-14 15:56:45,636 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-14 15:56:45,636 - __main__ - INFO - Received data: {'user_data': {'name': 'Тест'}, 'resume_type': 'standard'}
+2025-04-14 15:56:45,636 - __main__ - INFO - Generating resume with type: standard
+2025-04-14 15:56:45,935 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-14 15:56:49,099 - __main__ - INFO - Resume generated successfully
+2025-04-14 15:56:49,099 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 15:56:49] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 16:01:37,709 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:01:37] "OPTIONS /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 16:01:37,737 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-14 16:01:37,738 - __main__ - INFO - Received data: {'user_data': {'name': '', 'contacts': '', 'about': '', 'education': [], 'experience': [], 'skills': [], 'achievements': [], 'additional_info': ''}, 'resume_type': 'standard'}
+2025-04-14 16:01:37,738 - __main__ - INFO - Generating resume with type: standard
+2025-04-14 16:01:38,013 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-14 16:01:40,478 - __main__ - INFO - Resume generated successfully
+2025-04-14 16:01:40,478 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:01:40] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 16:02:25,015 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:02:25] "OPTIONS /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 16:02:25,024 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-14 16:02:25,024 - __main__ - INFO - Received data: {'user_data': {'name': 'Фролов Степан Алексеевич', 'contacts': '899999999', 'about': 'Хуесос', 'education': ['ПГУТИ '], 'experience': ['Год на Т1'], 'skills': ['Сосать хуи'], 'achievements': ['Мастерски полирую лысого'], 'additional_info': ''}, 'resume_type': 'standard'}
+2025-04-14 16:02:25,025 - __main__ - INFO - Generating resume with type: standard
+2025-04-14 16:02:25,276 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-14 16:02:27,913 - __main__ - INFO - Resume generated successfully
+2025-04-14 16:02:27,913 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:02:27] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 16:04:13,309 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:04:13] "OPTIONS /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 16:04:13,320 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-14 16:04:13,321 - __main__ - INFO - Received data: {'user_data': {'name': 'Фролов Степан Алексеевич', 'contacts': '899999999', 'about': 'Хуесос', 'education': ['ПГУТИ '], 'experience': ['Год на Т1'], 'skills': ['Сосать хуи'], 'achievements': ['Мастерски полирую лысого'], 'additional_info': ''}, 'resume_type': 'chronological'}
+2025-04-14 16:04:13,321 - __main__ - INFO - Generating resume with type: chronological
+2025-04-14 16:04:13,592 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-14 16:04:16,364 - __main__ - INFO - Resume generated successfully
+2025-04-14 16:04:16,364 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:04:16] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 16:04:25,514 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:04:25] "OPTIONS /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 16:04:25,525 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-14 16:04:25,526 - __main__ - INFO - Received data: {'user_data': {'name': 'Фролов Степан Алексеевич', 'contacts': '899999999', 'about': 'Хуесос', 'education': ['ПГУТИ '], 'experience': ['Год на Т1'], 'skills': ['Сосать хуи'], 'achievements': ['Мастерски полирую лысого'], 'additional_info': ''}, 'resume_type': 'functional'}
+2025-04-14 16:04:25,526 - __main__ - INFO - Generating resume with type: functional
+2025-04-14 16:04:25,839 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-14 16:04:28,600 - __main__ - INFO - Resume generated successfully
+2025-04-14 16:04:28,601 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:04:28] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 16:04:55,662 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:04:55] "OPTIONS /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 16:04:55,670 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-14 16:04:55,671 - __main__ - INFO - Received data: {'user_data': {'name': 'Фролов Степан Алексеевич', 'contacts': '899999999', 'about': 'Хуесос', 'education': ['ПГУТИ '], 'experience': ['Год на Т1'], 'skills': ['Сосать хуи'], 'achievements': ['Мастерски полирую лысого'], 'additional_info': ''}, 'resume_type': 'targeted'}
+2025-04-14 16:04:55,671 - __main__ - INFO - Generating resume with type: targeted
+2025-04-14 16:04:55,932 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-14 16:04:58,487 - __main__ - INFO - Resume generated successfully
+2025-04-14 16:04:58,488 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:04:58] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 16:05:03,218 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:05:03] "OPTIONS /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 16:05:03,234 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-14 16:05:03,237 - __main__ - INFO - Received data: {'user_data': {'name': 'Фролов Степан Алексеевич', 'contacts': '899999999', 'about': 'Хуесос', 'education': ['ПГУТИ '], 'experience': ['Год на Т1'], 'skills': ['Сосать хуи'], 'achievements': ['Мастерски полирую лысого'], 'additional_info': ''}, 'resume_type': 'targeted'}
+2025-04-14 16:05:03,239 - __main__ - INFO - Generating resume with type: targeted
+2025-04-14 16:05:03,523 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-14 16:05:06,373 - __main__ - INFO - Resume generated successfully
+2025-04-14 16:05:06,374 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:05:06] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 16:05:09,928 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:05:09] "OPTIONS /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 16:05:09,937 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-14 16:05:09,937 - __main__ - INFO - Received data: {'user_data': {'name': 'Фролов Степан Алексеевич', 'contacts': '899999999', 'about': 'Хуесос', 'education': ['ПГУТИ '], 'experience': ['Год на Т1'], 'skills': ['Сосать хуи'], 'achievements': ['Мастерски полирую лысого'], 'additional_info': ''}, 'resume_type': 'targeted'}
+2025-04-14 16:05:09,937 - __main__ - INFO - Generating resume with type: targeted
+2025-04-14 16:05:10,200 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-14 16:05:13,038 - __main__ - INFO - Resume generated successfully
+2025-04-14 16:05:13,039 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:05:13] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 16:05:27,040 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:05:27] "OPTIONS /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 16:05:27,051 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-14 16:05:27,051 - __main__ - INFO - Received data: {'user_data': {'name': 'Фролов Степан Алексеевич', 'contacts': '899999999', 'about': 'Хуесос', 'education': ['ПГУТИ '], 'experience': ['Год на Т1'], 'skills': ['Сосать хуи'], 'achievements': ['Мастерски полирую лысого'], 'additional_info': ''}, 'resume_type': 'targeted'}
+2025-04-14 16:05:27,051 - __main__ - INFO - Generating resume with type: targeted
+2025-04-14 16:05:27,319 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-14 16:05:30,288 - __main__ - INFO - Resume generated successfully
+2025-04-14 16:05:30,289 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:05:30] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 16:05:57,730 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:05:57] "OPTIONS /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 16:05:57,744 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-14 16:05:57,744 - __main__ - INFO - Received data: {'user_data': {'name': 'Фролов Степан Алексеевич', 'contacts': '899999999', 'about': 'Хуесос', 'education': ['ПГУТИ '], 'experience': ['Год на Т1'], 'skills': ['Сосать хуи'], 'achievements': ['Мастерски полирую лысого'], 'additional_info': ''}, 'resume_type': 'targeted'}
+2025-04-14 16:05:57,744 - __main__ - INFO - Generating resume with type: targeted
+2025-04-14 16:05:57,998 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-14 16:06:00,792 - __main__ - INFO - Resume generated successfully
+2025-04-14 16:06:00,792 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:06:00] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 16:06:22,865 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:06:22] "OPTIONS /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 16:06:22,875 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-14 16:06:22,876 - __main__ - INFO - Received data: {'user_data': {'name': 'Фролов Степан Алексеевич', 'contacts': '899999999', 'about': 'Хуесос', 'education': ['ПГУТИ '], 'experience': ['Год на Т1'], 'skills': ['Сосать хуи'], 'achievements': ['Мастерски полирую лысого'], 'additional_info': ''}, 'resume_type': 'targeted'}
+2025-04-14 16:06:22,876 - __main__ - INFO - Generating resume with type: targeted
+2025-04-14 16:06:24,312 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-14 16:06:27,087 - __main__ - INFO - Resume generated successfully
+2025-04-14 16:06:27,087 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:06:27] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 16:06:29,759 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:06:29] "OPTIONS /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 16:06:29,769 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-14 16:06:29,769 - __main__ - INFO - Received data: {'user_data': {'name': 'Фролов Степан Алексеевич', 'contacts': '899999999', 'about': 'Хуесос', 'education': ['ПГУТИ '], 'experience': ['Год на Т1'], 'skills': ['Сосать хуи'], 'achievements': ['Мастерски полирую лысого'], 'additional_info': ''}, 'resume_type': 'targeted'}
+2025-04-14 16:06:29,769 - __main__ - INFO - Generating resume with type: targeted
+2025-04-14 16:06:30,483 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-14 16:06:33,483 - __main__ - INFO - Resume generated successfully
+2025-04-14 16:06:33,483 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:06:33] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 16:06:40,180 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:06:40] "OPTIONS /api/generate-resume HTTP/1.1" 200 -
+2025-04-14 16:06:40,189 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-14 16:06:40,190 - __main__ - INFO - Received data: {'user_data': {'name': 'Фролов Степан Алексеевич', 'contacts': '899999999', 'about': 'Хуесос', 'education': ['ПГУТИ '], 'experience': ['Год на Т1'], 'skills': ['Сосать хуи'], 'achievements': ['Мастерски полирую лысого'], 'additional_info': ''}, 'resume_type': 'targeted'}
+2025-04-14 16:06:40,191 - __main__ - INFO - Generating resume with type: targeted
+2025-04-14 16:06:40,450 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-14 16:06:43,485 - __main__ - INFO - Resume generated successfully
+2025-04-14 16:06:43,486 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:06:43] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-15 08:34:54,532 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.10:5000
+2025-04-15 08:34:54,532 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-15 08:34:54,533 - werkzeug - INFO -  * Restarting with stat
+2025-04-15 08:34:54,661 - werkzeug - WARNING -  * Debugger is active!
+2025-04-15 08:34:54,668 - werkzeug - INFO -  * Debugger PIN: 102-140-389
+2025-04-15 08:36:59,859 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 08:36:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-15 08:37:26,596 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 08:37:26] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+2025-04-15 08:37:26,613 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 08:37:26] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+2025-04-15 08:37:27,114 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 08:37:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-15 08:43:14,077 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 08:43:14] "OPTIONS /api/generate-resume HTTP/1.1" 200 -
+2025-04-15 08:43:14,083 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-15 08:43:14,085 - __main__ - INFO - Received data: {'user_data': {'name': '', 'contacts': '', 'about': '', 'education': [], 'experience': [], 'skills': [], 'achievements': [], 'additional_info': ''}, 'resume_type': 'standard'}
+2025-04-15 08:43:14,085 - __main__ - INFO - Generating resume with type: standard
+2025-04-15 08:43:14,389 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-15 08:43:17,207 - __main__ - INFO - Resume generated successfully
+2025-04-15 08:43:17,209 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 08:43:17] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-15 08:43:21,813 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 08:43:21] "OPTIONS /api/generate-resume HTTP/1.1" 200 -
+2025-04-15 08:43:21,820 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-15 08:43:21,821 - __main__ - INFO - Received data: {'user_data': {'name': '', 'contacts': '', 'about': '', 'education': [], 'experience': [], 'skills': [], 'achievements': [], 'additional_info': ''}, 'resume_type': 'standard'}
+2025-04-15 08:43:21,821 - __main__ - INFO - Generating resume with type: standard
+2025-04-15 08:43:22,002 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-15 08:43:24,647 - __main__ - INFO - Resume generated successfully
+2025-04-15 08:43:24,647 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 08:43:24] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-15 08:45:48,483 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-15 08:45:48,484 - __main__ - INFO - Received data: {'user_data': {'name': '', 'contacts': '', 'about': '', 'education': [], 'experience': [], 'skills': [], 'achievements': [], 'additional_info': ''}, 'resume_type': 'standard'}
+2025-04-15 08:45:48,484 - __main__ - INFO - Generating resume with type: standard
+2025-04-15 08:45:48,676 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-15 08:45:50,914 - __main__ - INFO - Resume generated successfully
+2025-04-15 08:45:50,915 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 08:45:50] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-15 08:45:53,434 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-15 08:45:53,434 - __main__ - INFO - Received data: {'user_data': {'name': '', 'contacts': '', 'about': '', 'education': [], 'experience': [], 'skills': [], 'achievements': [], 'additional_info': ''}, 'resume_type': 'standard'}
+2025-04-15 08:45:53,435 - __main__ - INFO - Generating resume with type: standard
+2025-04-15 08:45:53,626 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-15 08:45:56,454 - __main__ - INFO - Resume generated successfully
+2025-04-15 08:45:56,455 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 08:45:56] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-15 08:47:12,569 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-15 08:47:12,570 - __main__ - INFO - Received data: {'user_data': {'name': '', 'contacts': '', 'about': '', 'education': [], 'experience': [], 'skills': [], 'achievements': [], 'additional_info': ''}, 'resume_type': 'standard'}
+2025-04-15 08:47:12,570 - __main__ - INFO - Generating resume with type: standard
+2025-04-15 08:47:12,745 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-15 08:47:15,451 - __main__ - INFO - Resume generated successfully
+2025-04-15 08:47:15,452 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 08:47:15] "POST /api/generate-resume HTTP/1.1" 200 -
