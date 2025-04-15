@@ -22,14 +22,13 @@
 
 3. Запустите backend:
    ```
-   
+
    cd backend
    python3 app.py
    ```
 
 4. Запустите frontend:
    ```
-
    cd frontend 
    npm start
    ```
