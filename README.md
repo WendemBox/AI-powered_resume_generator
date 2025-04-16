@@ -18,6 +18,9 @@
    pip intsall flask
    pip intsall flask_cors
    pip intsall dotenv
+   pip install python-docx
+   pip install markdown
+   pip install pdfkit  
    ```   
 
 3. Запустите backend:

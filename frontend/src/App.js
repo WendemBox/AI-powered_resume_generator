@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './App.css';
-import html2pdf from 'html2pdf.js';
 
 function App() {
   const [userData, setUserData] = useState({
     name: '',
+    target_position: '',
     contacts: '',
     about: '',
     education: [],
@@ -13,11 +13,18 @@ function App() {
     achievements: [],
     additional_info: ''
   });
+
   const [resumeType, setResumeType] = useState('standard');
   const [generatedResume, setGeneratedResume] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
+  const [downloadStatus, setDownloadStatus] = useState({ 
+    type: '', 
+    loading: false, 
+    error: '' 
+  });
 
+  // Обработчики изменений формы
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setUserData(prev => ({ ...prev, [name]: value }));
@@ -38,6 +45,7 @@ function App() {
     setUserData(prev => ({ ...prev, [field]: newArray }));
   };
 
+  // Генерация резюме через API
   const generateResume = async () => {
     setIsLoading(true);
     setError('');
@@ -45,9 +53,7 @@ function App() {
     try {
       const response = await fetch('/api/generate-resume', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           user_data: userData,
           resume_type: resumeType
@@ -69,35 +75,59 @@ function App() {
     }
   };
 
-  const downloadPDF = () => {
-    const element = document.querySelector('.resume-preview');
-    html2pdf().from(element).set({
-      margin: 1,
-      filename: 'resume.pdf',
-      image: { type: 'jpeg', quality: 0.98 },
-      html2canvas: { scale: 2 },
-      jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
-    }).save();
+  // Скачивание резюме в выбранном формате
+  const downloadResume = async (format) => {
+    setDownloadStatus({ type: format, loading: true, error: '' });
+    
+    try {
+      const response = await fetch('/api/download-resume', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          resume_content: generatedResume,
+          format: format,
+          file_name: `${userData.name || 'resume'}_${new Date().toISOString().slice(0,10)}`
+        }),
+      });
+      
+      if (response.ok) {
+        const blob = await response.blob();
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${userData.name || 'resume'}_${new Date().toISOString().slice(0,10)}.${format}`;
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+      } else {
+        const data = await response.json();
+        throw new Error(data.message || 'Ошибка при загрузке файла');
+      }
+    } catch (err) {
+      setDownloadStatus(prev => ({ ...prev, error: err.message }));
+      console.error('Download Error:', err);
+    } finally {
+      setDownloadStatus(prev => ({ ...prev, loading: false }));
+    }
   };
 
-  const downloadDOCX = () => {
-    const element = document.querySelector('.resume-preview');
-    const text = element.innerText || '';
-    const blob = new Blob([text], {
-      type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
-    });
-    const link = document.createElement('a');
-    link.href = URL.createObjectURL(blob);
-    link.download = 'resume.docx';
-    link.click();
-    URL.revokeObjectURL(link.href);
-  };
-
-  const copyToClipboard = () => {
-    navigator.clipboard.writeText(
-      document.querySelector('.resume-preview')?.innerText || ''
-    );
-    alert('Резюме скопировано в буфер обмена!');
+  // Поделиться резюме
+  const shareResume = async () => {
+    try {
+      if (navigator.share) {
+        await navigator.share({
+          title: 'Мое резюме',
+          text: 'Посмотрите мое резюме, созданное с помощью AI генератора',
+          url: window.location.href
+        });
+      } else {
+        // Fallback для браузеров без Web Share API
+        const shareUrl = `mailto:?subject=Мое резюме&body=Посмотрите мое резюме: ${window.location.href}`;
+        window.open(shareUrl, '_blank');
+      }
+    } catch (err) {
+      console.error('Error sharing:', err);
+    }
   };
 
   return (
@@ -108,39 +138,41 @@ function App() {
       </header>
       
       <div className="container">
+        {/* Форма ввода данных */}
         <div className="form-section">
           <h2>Личная информация</h2>
-          <div className="form-group">
-            <label>ФИО</label>
-            <input
-              type="text"
-              name="name"
-              placeholder="Иванов Иван Иванович"
-              value={userData.name}
-              onChange={handleInputChange}
-            />
-          </div>
           
-          <div className="form-group">
-            <label>Контактная информация</label>
-            <input
-              type="text"
-              name="contacts"
-              placeholder="Телефон, email, LinkedIn"
-              value={userData.contacts}
-              onChange={handleInputChange}
-            />
-          </div>
+          <FormInput 
+            label="ФИО"
+            name="name"
+            value={userData.name}
+            onChange={handleInputChange}
+            placeholder="Иванов Иван Иванович"
+          />
           
-          <div className="form-group">
-            <label>О себе</label>
-            <textarea
-              name="about"
-              placeholder="Краткое профессиональное описание"
-              value={userData.about}
-              onChange={handleInputChange}
-            />
-          </div>
+          <FormInput 
+            label="Целевая позиция"
+            name="target_position"
+            value={userData.target_position}
+            onChange={handleInputChange}
+            placeholder="Желаемая должность"
+          />
+          
+          <FormInput 
+            label="Контактная информация"
+            name="contacts"
+            value={userData.contacts}
+            onChange={handleInputChange}
+            placeholder="Телефон, email, LinkedIn"
+          />
+          
+          <FormTextarea 
+            label="О себе"
+            name="about"
+            value={userData.about}
+            onChange={handleInputChange}
+            placeholder="Краткое профессиональное описание"
+          />
           
           <FormSection 
             title="Образование"
@@ -178,15 +210,13 @@ function App() {
             placeholder="Конкретные достижения с цифрами"
           />
           
-          <div className="form-group">
-            <label>Дополнительная информация</label>
-            <textarea
-              name="additional_info"
-              placeholder="Сертификаты, языки, хобби"
-              value={userData.additional_info}
-              onChange={handleInputChange}
-            />
-          </div>
+          <FormTextarea 
+            label="Дополнительная информация"
+            name="additional_info"
+            value={userData.additional_info}
+            onChange={handleInputChange}
+            placeholder="Сертификаты, языки, хобби"
+          />
           
           <div className="form-group">
             <label>Тип резюме</label>
@@ -199,6 +229,10 @@ function App() {
               <option value="chronological">Хронологическое</option>
               <option value="functional">Функциональное</option>
               <option value="targeted">Целевое (под вакансию)</option>
+              <option value="creative">Креативное</option>
+              <option value="academic">Академическое</option>
+              <option value="it">IT-специалиста</option>
+              <option value="business">Бизнес</option>
             </select>
           </div>
           
@@ -213,47 +247,65 @@ function App() {
           {error && <div className="error-message">{error}</div>}
         </div>
         
+        {/* Превью резюме */}
         <div className="resume-section">
           <div className="resume-header">
             <h2>Ваше резюме</h2>
             {generatedResume && (
               <div className="resume-actions">
-                <button className="download-btn" onClick={downloadPDF}>PDF</button>
-                <button className="download-btn" onClick={downloadDOCX}>DOCX</button>
-                <button className="share-btn" onClick={copyToClipboard}>Поделиться</button>
+                <DownloadButton 
+                  format="pdf"
+                  onClick={downloadResume}
+                  isLoading={downloadStatus.loading && downloadStatus.type === 'pdf'}
+                />
+                <DownloadButton 
+                  format="docx"
+                  onClick={downloadResume}
+                  isLoading={downloadStatus.loading && downloadStatus.type === 'docx'}
+                />
+                <button 
+                  onClick={shareResume}
+                  className="share-btn"
+                >
+                  Поделиться
+                </button>
               </div>
             )}
           </div>
           
           <div className="resume-preview">
             {generatedResume ? (
-              <div className="markdown-content" dangerouslySetInnerHTML={{ 
-                __html: generatedResume
-                  .replace(/\n/g, '<br>')
-                  .replace(/^# (.*$)/gm, '<h1>$1</h1>')
-                  .replace(/^## (.*$)/gm, '<h2>$1</h2>')
-                  .replace(/^### (.*$)/gm, '<h3>$1</h3>')
-                  .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                  .replace(/\*(.*?)\*/g, '<em>$1</em>')
-                  .replace(/- (.*?)(<br>|$)/g, '<li>$1</li>')
-              }} />
+              <MarkdownPreview content={generatedResume} />
             ) : (
-              <div className="empty-resume">
-                <p>Заполните форму и нажмите "Сгенерировать резюме"</p>
-                <p>Система использует Искусственный интеллект для создания профессионального резюме</p>
-              </div>
+              <EmptyResumePlaceholder />
             )}
+            {downloadStatus.error && <div className="error-message">{downloadStatus.error}</div>}
           </div>
         </div>
       </div>
       
-      <footer>
-        <p>Система автоматического создания резюме с ИИ | Дипломный проект</p>
-      </footer>
+      <Footer />
     </div>
   );
 }
 
+// Компонент для полей ввода
+const FormInput = ({ label, ...props }) => (
+  <div className="form-group">
+    <label>{label}</label>
+    <input type="text" {...props} />
+  </div>
+);
+
+// Компонент для текстовых областей
+const FormTextarea = ({ label, ...props }) => (
+  <div className="form-group">
+    <label>{label}</label>
+    <textarea {...props} />
+  </div>
+);
+
+// Компонент для секций с массивами
 const FormSection = ({ title, items, onAdd, onChange, onRemove, placeholder }) => (
   <div className="form-section-group">
     <h3>{title}</h3>
@@ -277,6 +329,47 @@ const FormSection = ({ title, items, onAdd, onChange, onRemove, placeholder }) =
       + Добавить
     </button>
   </div>
+);
+
+// Компонент для кнопки скачивания
+const DownloadButton = ({ format, onClick, isLoading }) => (
+  <button 
+    onClick={() => onClick(format)} 
+    disabled={isLoading}
+    className={`download-btn ${format}`}
+  >
+    {isLoading ? 'Генерация...' : format.toUpperCase()}
+  </button>
+);
+
+// Компонент для превью Markdown
+const MarkdownPreview = ({ content }) => (
+  <div className="markdown-content" dangerouslySetInnerHTML={{ 
+    __html: content
+      .replace(/\n/g, '<br>')
+      .replace(/^# (.*$)/gm, '<h1>$1</h1>')
+      .replace(/^## (.*$)/gm, '<h2>$1</h2>')
+      .replace(/^### (.*$)/gm, '<h3>$1</h3>')
+      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+      .replace(/\*(.*?)\*/g, '<em>$1</em>')
+      .replace(/- (.*?)(<br>|$)/g, '<li>$1</li>')
+  }} />
+);
+
+// Компонент для пустого состояния резюме
+const EmptyResumePlaceholder = () => (
+  <div className="empty-resume">
+    <p>Заполните форму и нажмите "Сгенерировать резюме"</p>
+    <p>Система использует Искусственный интеллект для создания профессионального резюме</p>
+  </div>
+);
+
+// Компонент футера
+const Footer = () => (
+  <footer>
+    <p>Система автоматического создания резюме с ИИ | Дипломный проект</p>
+    <p>Доступные форматы: PDF, DOCX | Возможности: генерация, скачивание, шаринг</p>
+  </footer>
 );
 
 export default App;
