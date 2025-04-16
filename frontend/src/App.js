@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './App.css'; 
+import './App.css';
+import html2pdf from 'html2pdf.js';
 
 function App() {
   const [userData, setUserData] = useState({
@@ -66,6 +67,37 @@ function App() {
     } finally {
       setIsLoading(false);
     }
+  };
+
+  const downloadPDF = () => {
+    const element = document.querySelector('.resume-preview');
+    html2pdf().from(element).set({
+      margin: 1,
+      filename: 'resume.pdf',
+      image: { type: 'jpeg', quality: 0.98 },
+      html2canvas: { scale: 2 },
+      jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+    }).save();
+  };
+
+  const downloadDOCX = () => {
+    const element = document.querySelector('.resume-preview');
+    const text = element.innerText || '';
+    const blob = new Blob([text], {
+      type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+    });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'resume.docx';
+    link.click();
+    URL.revokeObjectURL(link.href);
+  };
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(
+      document.querySelector('.resume-preview')?.innerText || ''
+    );
+    alert('Резюме скопировано в буфер обмена!');
   };
 
   return (
@@ -186,9 +218,9 @@ function App() {
             <h2>Ваше резюме</h2>
             {generatedResume && (
               <div className="resume-actions">
-                <button className="download-btn">PDF</button>
-                <button className="download-btn">DOCX</button>
-                <button className="share-btn">Поделиться</button>
+                <button className="download-btn" onClick={downloadPDF}>PDF</button>
+                <button className="download-btn" onClick={downloadDOCX}>DOCX</button>
+                <button className="share-btn" onClick={copyToClipboard}>Поделиться</button>
               </div>
             )}
           </div>
