@@ -859,3 +859,123 @@ If this file exists please check that this process can read it or you can pass p
 2025-04-17 14:08:39,483 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
 2025-04-17 14:08:42,241 - __main__ - INFO - Resume generated successfully
 2025-04-17 14:08:42,243 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:08:42] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-17 14:56:57,902 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:56:57] "[33mGET /templates/classic.png HTTP/1.1[0m" 404 -
+2025-04-17 14:56:57,906 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:56:57] "[33mGET /templates/modern.png HTTP/1.1[0m" 404 -
+2025-04-17 14:56:57,911 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:56:57] "[33mGET /templates/creative.png HTTP/1.1[0m" 404 -
+2025-04-17 14:56:58,006 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:56:58] "[33mGET /templates/academic.png HTTP/1.1[0m" 404 -
+2025-04-17 14:56:59,433 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:56:59] "[33mGET /templates/modern.png HTTP/1.1[0m" 404 -
+2025-04-17 14:56:59,435 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:56:59] "[33mGET /templates/classic.png HTTP/1.1[0m" 404 -
+2025-04-17 14:56:59,435 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:56:59] "[33mGET /templates/creative.png HTTP/1.1[0m" 404 -
+2025-04-17 14:56:59,436 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:56:59] "[33mGET /templates/academic.png HTTP/1.1[0m" 404 -
+2025-04-17 14:58:15,654 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-17 14:58:15,658 - __main__ - INFO - Received data for resume generation
+2025-04-17 14:58:15,660 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:58:15] "[31m[1mPOST /api/generate-resume HTTP/1.1[0m" 400 -
+2025-04-17 14:58:29,210 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-17 14:58:29,212 - __main__ - INFO - Received data for resume generation
+2025-04-17 14:58:29,212 - __main__ - INFO - Generating standard resume
+2025-04-17 14:58:29,481 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-17 14:58:33,378 - __main__ - INFO - Resume generated successfully
+2025-04-17 14:58:33,382 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:58:33] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-17 14:58:46,932 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:58:46] "[33mPOST /api/ats-check HTTP/1.1[0m" 404 -
+2025-04-17 14:58:52,549 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:58:52] "[33mGET /api/vacancies?position=Frontend%20Developer&lang=ru HTTP/1.1[0m" 404 -
+2025-04-17 14:58:57,395 - __main__ - INFO - Received request to /api/download-resume
+2025-04-17 14:58:59,811 - __main__ - INFO - File generated successfully: /var/folders/gf/yw7m6ypx0xb5dj2lr2xjt9ch0000gn/T/tmp04yxxdv3.pdf
+2025-04-17 14:58:59,817 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:58:59] "POST /api/download-resume HTTP/1.1" 200 -
+2025-04-17 14:59:00,591 - __main__ - INFO - Received request to /api/download-resume
+2025-04-17 14:59:00,646 - __main__ - INFO - File generated successfully: /var/folders/gf/yw7m6ypx0xb5dj2lr2xjt9ch0000gn/T/tmpr_x1x4j0.docx
+2025-04-17 14:59:00,647 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:59:00] "POST /api/download-resume HTTP/1.1" 200 -
+2025-04-17 14:59:36,289 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:59:36] "[33mPOST /api/ats-check HTTP/1.1[0m" 404 -
+2025-04-17 14:59:40,537 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:59:40] "[33mPOST /api/export HTTP/1.1[0m" 404 -
+2025-04-17 14:59:46,462 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:59:46] "[33mGET /templates/modern.png HTTP/1.1[0m" 404 -
+2025-04-17 14:59:46,463 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:59:46] "[33mGET /templates/classic.png HTTP/1.1[0m" 404 -
+2025-04-17 14:59:46,463 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:59:46] "[33mGET /templates/creative.png HTTP/1.1[0m" 404 -
+2025-04-17 14:59:46,464 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:59:46] "[33mGET /templates/academic.png HTTP/1.1[0m" 404 -
+2025-04-17 15:08:03,610 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-17 15:08:03,614 - __main__ - INFO - Received data for resume generation
+2025-04-17 15:08:03,616 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:08:03] "[31m[1mPOST /api/generate-resume HTTP/1.1[0m" 400 -
+2025-04-17 15:08:14,021 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-17 15:08:14,024 - __main__ - INFO - Received data for resume generation
+2025-04-17 15:08:14,024 - __main__ - INFO - Generating creative resume
+2025-04-17 15:08:14,239 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-17 15:08:16,812 - __main__ - INFO - Resume generated successfully
+2025-04-17 15:08:16,814 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:08:16] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-17 15:08:31,310 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:08:31] "[33mPOST /api/ats-check HTTP/1.1[0m" 404 -
+2025-04-17 15:08:31,966 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:08:31] "[33mGET /api/vacancies?position=&lang=ru HTTP/1.1[0m" 404 -
+2025-04-17 15:08:39,507 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:08:39] "[33mGET /templates/modern.png HTTP/1.1[0m" 404 -
+2025-04-17 15:08:39,508 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:08:39] "[33mGET /templates/classic.png HTTP/1.1[0m" 404 -
+2025-04-17 15:08:39,508 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:08:39] "[33mGET /templates/creative.png HTTP/1.1[0m" 404 -
+2025-04-17 15:08:39,510 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:08:39] "[33mGET /templates/academic.png HTTP/1.1[0m" 404 -
+2025-04-17 15:14:06,192 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:14:06] "[33mGET /templates/modern.png HTTP/1.1[0m" 404 -
+2025-04-17 15:14:06,194 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:14:06] "[33mGET /templates/classic.png HTTP/1.1[0m" 404 -
+2025-04-17 15:14:06,197 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:14:06] "[33mGET /templates/creative.png HTTP/1.1[0m" 404 -
+2025-04-17 15:14:06,198 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:14:06] "[33mGET /templates/academic.png HTTP/1.1[0m" 404 -
+2025-04-17 15:35:51,918 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:35:51] "[33mGET /templates/classic.png HTTP/1.1[0m" 404 -
+2025-04-17 15:35:51,919 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:35:51] "[33mGET /templates/modern.png HTTP/1.1[0m" 404 -
+2025-04-17 15:35:51,919 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:35:51] "[33mGET /templates/creative.png HTTP/1.1[0m" 404 -
+2025-04-17 15:35:51,925 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:35:51] "[33mGET /templates/academic.png HTTP/1.1[0m" 404 -
+2025-04-17 15:35:57,523 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-17 15:35:57,526 - __main__ - INFO - Received data for resume generation
+2025-04-17 15:35:57,529 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:35:57] "[31m[1mPOST /api/generate-resume HTTP/1.1[0m" 400 -
+2025-04-17 15:36:01,573 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:01] "[33mGET /templates/modern.png HTTP/1.1[0m" 404 -
+2025-04-17 15:36:01,574 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:01] "[33mGET /templates/classic.png HTTP/1.1[0m" 404 -
+2025-04-17 15:36:01,614 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:01] "[33mGET /templates/academic.png HTTP/1.1[0m" 404 -
+2025-04-17 15:36:01,657 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:01] "[33mGET /templates/creative.png HTTP/1.1[0m" 404 -
+2025-04-17 15:36:03,157 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:03] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+2025-04-17 15:36:03,159 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:03] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+2025-04-17 15:36:03,161 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-17 15:36:05,296 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:05] "[33mGET /templates/modern.png HTTP/1.1[0m" 404 -
+2025-04-17 15:36:05,298 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:05] "[33mGET /templates/classic.png HTTP/1.1[0m" 404 -
+2025-04-17 15:36:05,299 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:05] "[33mGET /templates/creative.png HTTP/1.1[0m" 404 -
+2025-04-17 15:36:05,300 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:05] "[33mGET /templates/academic.png HTTP/1.1[0m" 404 -
+2025-04-17 15:36:05,763 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-17 15:36:15,397 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-17 15:36:15,401 - __main__ - INFO - Received data for resume generation
+2025-04-17 15:36:15,401 - __main__ - INFO - Generating standard resume
+2025-04-17 15:36:15,655 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-17 15:36:18,779 - __main__ - INFO - Resume generated successfully
+2025-04-17 15:36:18,781 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:18] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-17 15:36:26,894 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:26] "[33mPOST /api/ats-check HTTP/1.1[0m" 404 -
+2025-04-17 15:36:28,590 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:28] "[33mGET /api/vacancies?position=&lang=ru HTTP/1.1[0m" 404 -
+2025-04-17 15:36:51,684 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-17 15:36:51,686 - __main__ - INFO - Received data for resume generation
+2025-04-17 15:36:51,687 - __main__ - INFO - Generating standard resume
+2025-04-17 15:36:51,896 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-17 15:36:55,198 - __main__ - INFO - Resume generated successfully
+2025-04-17 15:36:55,201 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:55] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-17 15:39:06,817 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-17 15:39:06,821 - __main__ - INFO - Received data for resume generation
+2025-04-17 15:39:06,821 - __main__ - INFO - Generating standard resume
+2025-04-17 15:39:07,004 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-17 15:39:09,722 - __main__ - INFO - Resume generated successfully
+2025-04-17 15:39:09,726 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:39:09] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-17 15:39:16,910 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-17 15:39:16,913 - __main__ - INFO - Received data for resume generation
+2025-04-17 15:39:16,913 - __main__ - INFO - Generating standard resume
+2025-04-17 15:39:17,090 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-17 15:39:19,820 - __main__ - INFO - Resume generated successfully
+2025-04-17 15:39:19,824 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:39:19] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-17 15:39:56,431 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-17 15:39:56,438 - __main__ - INFO - Received data for resume generation
+2025-04-17 15:39:56,438 - __main__ - INFO - Generating standard resume
+2025-04-17 15:39:56,629 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-17 15:39:59,396 - __main__ - INFO - Resume generated successfully
+2025-04-17 15:39:59,399 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:39:59] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-17 15:40:09,039 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-17 15:40:09,046 - __main__ - INFO - Received data for resume generation
+2025-04-17 15:40:09,049 - __main__ - INFO - Generating standard resume
+2025-04-17 15:40:09,244 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-17 15:40:11,985 - __main__ - INFO - Resume generated successfully
+2025-04-17 15:40:11,987 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:40:11] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-17 15:40:19,167 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:40:19] "[33mPOST /api/ats-check HTTP/1.1[0m" 404 -
+2025-04-17 15:40:19,571 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:40:19] "[33mGET /api/vacancies?position=Frontend%20Developer&lang=ru HTTP/1.1[0m" 404 -
+2025-04-17 15:40:20,603 - __main__ - INFO - Received request to /api/download-resume
+2025-04-17 15:40:22,959 - __main__ - INFO - File generated successfully: /var/folders/gf/yw7m6ypx0xb5dj2lr2xjt9ch0000gn/T/tmp92a80eib.pdf
+2025-04-17 15:40:22,963 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:40:22] "POST /api/download-resume HTTP/1.1" 200 -
+2025-04-17 15:40:25,936 - __main__ - INFO - Received request to /api/download-resume
+2025-04-17 15:40:25,984 - __main__ - INFO - File generated successfully: /var/folders/gf/yw7m6ypx0xb5dj2lr2xjt9ch0000gn/T/tmpvlvqtrza.docx
+2025-04-17 15:40:25,986 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:40:25] "POST /api/download-resume HTTP/1.1" 200 -
+2025-04-17 15:40:29,713 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:40:29] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+2025-04-17 15:40:29,714 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:40:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-17 15:40:29,719 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:40:29] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+2025-04-17 15:40:43,799 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:40:43] "[33mPOST /api/export HTTP/1.1[0m" 404 -
+2025-04-17 15:40:44,071 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:40:44] "[33mPOST /api/export HTTP/1.1[0m" 404 -
