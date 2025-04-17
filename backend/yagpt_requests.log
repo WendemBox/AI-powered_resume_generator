@@ -721,3 +721,141 @@ If this file exists please check that this process can read it or you can pass p
 2025-04-16 12:12:24,410 - __main__ - INFO - Received request to /api/download-resume
 2025-04-16 12:12:29,835 - __main__ - INFO - File generated successfully: /var/folders/gf/yw7m6ypx0xb5dj2lr2xjt9ch0000gn/T/tmpnjb2sy0g.pdf
 2025-04-16 12:12:29,838 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:12:29] "POST /api/download-resume HTTP/1.1" 200 -
+2025-04-16 12:18:23,266 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-16 12:18:23,268 - __main__ - INFO - Received data for resume generation
+2025-04-16 12:18:23,268 - __main__ - INFO - Generating it resume
+2025-04-16 12:18:23,495 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-16 12:18:26,536 - __main__ - INFO - Resume generated successfully
+2025-04-16 12:18:26,540 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:18:26] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-16 12:18:35,161 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-16 12:18:35,163 - __main__ - INFO - Received data for resume generation
+2025-04-16 12:18:35,164 - __main__ - INFO - Generating creative resume
+2025-04-16 12:18:35,353 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-16 12:18:39,084 - __main__ - INFO - Resume generated successfully
+2025-04-16 12:18:39,086 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:18:39] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-16 12:32:20,548 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-16 12:32:20,553 - __main__ - INFO - Received data for resume generation
+2025-04-16 12:32:20,561 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:32:20] "[31m[1mPOST /api/generate-resume HTTP/1.1[0m" 400 -
+2025-04-16 12:32:32,956 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-16 12:32:32,958 - __main__ - INFO - Received data for resume generation
+2025-04-16 12:32:32,958 - __main__ - INFO - Generating creative resume
+2025-04-16 12:32:33,199 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-16 12:32:36,875 - __main__ - INFO - Resume generated successfully
+2025-04-16 12:32:36,878 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:32:36] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-16 12:32:41,361 - __main__ - INFO - Received request to /api/download-resume
+2025-04-16 12:32:41,430 - __main__ - INFO - File generated successfully: /var/folders/gf/yw7m6ypx0xb5dj2lr2xjt9ch0000gn/T/tmpab3eh1kz.docx
+2025-04-16 12:32:41,435 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:32:41] "POST /api/download-resume HTTP/1.1" 200 -
+2025-04-16 12:32:44,314 - __main__ - INFO - Received request to /api/download-resume
+2025-04-16 12:32:46,671 - __main__ - INFO - File generated successfully: /var/folders/gf/yw7m6ypx0xb5dj2lr2xjt9ch0000gn/T/tmpz9le4k5t.pdf
+2025-04-16 12:32:46,673 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:32:46] "POST /api/download-resume HTTP/1.1" 200 -
+2025-04-16 12:33:28,589 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-16 12:33:28,590 - __main__ - INFO - Received data for resume generation
+2025-04-16 12:33:28,590 - __main__ - INFO - Generating it resume
+2025-04-16 12:33:28,787 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-16 12:33:31,845 - __main__ - INFO - Resume generated successfully
+2025-04-16 12:33:31,847 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:33:31] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-16 13:36:52,172 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-16 13:36:52,180 - __main__ - INFO - Received data for resume generation
+2025-04-16 13:36:52,187 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:36:52] "[31m[1mPOST /api/generate-resume HTTP/1.1[0m" 400 -
+2025-04-16 13:37:17,052 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-16 13:37:17,056 - __main__ - INFO - Received data for resume generation
+2025-04-16 13:37:17,056 - __main__ - INFO - Generating creative resume
+2025-04-16 13:37:17,355 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-16 13:37:21,334 - __main__ - INFO - Resume generated successfully
+2025-04-16 13:37:21,338 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:37:21] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-16 13:39:17,466 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-16 13:39:17,469 - __main__ - INFO - Received data for resume generation
+2025-04-16 13:39:17,469 - __main__ - INFO - Generating creative resume
+2025-04-16 13:39:17,675 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-16 13:39:22,016 - __main__ - INFO - Resume generated successfully
+2025-04-16 13:39:22,019 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:39:22] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-16 13:39:50,159 - __main__ - INFO - Received request to /api/download-resume
+2025-04-16 13:39:50,226 - __main__ - INFO - File generated successfully: /var/folders/gf/yw7m6ypx0xb5dj2lr2xjt9ch0000gn/T/tmpe160zvok.docx
+2025-04-16 13:39:50,229 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:39:50] "POST /api/download-resume HTTP/1.1" 200 -
+2025-04-16 13:39:51,502 - __main__ - INFO - Received request to /api/download-resume
+2025-04-16 13:39:54,028 - __main__ - INFO - File generated successfully: /var/folders/gf/yw7m6ypx0xb5dj2lr2xjt9ch0000gn/T/tmpdvra7hj1.pdf
+2025-04-16 13:39:54,031 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:39:54] "POST /api/download-resume HTTP/1.1" 200 -
+2025-04-16 13:39:56,995 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:39:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-16 13:39:56,996 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:39:56] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+2025-04-16 13:39:56,996 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:39:56] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+2025-04-16 13:42:37,036 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-16 13:42:37,038 - __main__ - INFO - Received data for resume generation
+2025-04-16 13:42:37,038 - __main__ - INFO - Generating standard resume
+2025-04-16 13:42:37,256 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-16 13:42:40,859 - __main__ - INFO - Resume generated successfully
+2025-04-16 13:42:40,862 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:42:40] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-17 13:22:25,276 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:22:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-17 13:22:36,705 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:22:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-17 13:22:45,416 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-17 13:22:45,421 - __main__ - INFO - Received data for resume generation
+2025-04-17 13:22:45,425 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:22:45] "[31m[1mPOST /api/generate-resume HTTP/1.1[0m" 400 -
+2025-04-17 13:22:51,822 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:22:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-17 13:37:25,882 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-17 13:37:25,887 - __main__ - INFO - Received data for resume generation
+2025-04-17 13:37:25,887 - __main__ - INFO - Generating standard resume
+2025-04-17 13:37:26,200 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-17 13:37:28,665 - __main__ - INFO - Resume generated successfully
+2025-04-17 13:37:28,668 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:37:28] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-17 13:37:40,489 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-17 13:37:40,492 - __main__ - INFO - Received data for resume generation
+2025-04-17 13:37:40,492 - __main__ - INFO - Generating it resume
+2025-04-17 13:37:40,680 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-17 13:37:43,640 - __main__ - INFO - Resume generated successfully
+2025-04-17 13:37:43,643 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:37:43] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-17 13:37:54,446 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-17 13:37:54,448 - __main__ - INFO - Received data for resume generation
+2025-04-17 13:37:54,448 - __main__ - INFO - Generating it resume
+2025-04-17 13:37:54,650 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-17 13:37:57,978 - __main__ - INFO - Resume generated successfully
+2025-04-17 13:37:57,981 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:37:57] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-17 13:57:08,944 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-17 13:57:08,950 - __main__ - INFO - Received data for resume generation
+2025-04-17 13:57:08,958 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:57:08] "[31m[1mPOST /api/generate-resume HTTP/1.1[0m" 400 -
+2025-04-17 13:57:45,023 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-17 13:57:45,025 - __main__ - INFO - Received data for resume generation
+2025-04-17 13:57:45,027 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:57:45] "[31m[1mPOST /api/generate-resume HTTP/1.1[0m" 400 -
+2025-04-17 13:58:07,020 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-17 13:58:07,023 - __main__ - INFO - Received data for resume generation
+2025-04-17 13:58:07,024 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:58:07] "[31m[1mPOST /api/generate-resume HTTP/1.1[0m" 400 -
+2025-04-17 13:58:27,542 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-17 13:58:27,545 - __main__ - INFO - Received data for resume generation
+2025-04-17 13:58:27,545 - __main__ - INFO - Generating standard resume
+2025-04-17 13:58:27,825 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-17 13:58:31,690 - __main__ - INFO - Resume generated successfully
+2025-04-17 13:58:31,694 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:58:31] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-17 13:58:33,742 - __main__ - INFO - Received request to /api/download-resume
+2025-04-17 13:58:33,815 - __main__ - INFO - File generated successfully: /var/folders/gf/yw7m6ypx0xb5dj2lr2xjt9ch0000gn/T/tmp8px9pa_r.docx
+2025-04-17 13:58:33,820 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:58:33] "POST /api/download-resume HTTP/1.1" 200 -
+2025-04-17 13:58:35,545 - __main__ - INFO - Received request to /api/download-resume
+2025-04-17 13:58:38,032 - __main__ - INFO - File generated successfully: /var/folders/gf/yw7m6ypx0xb5dj2lr2xjt9ch0000gn/T/tmp_i0ado_1.pdf
+2025-04-17 13:58:38,034 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:58:38] "POST /api/download-resume HTTP/1.1" 200 -
+2025-04-17 14:03:46,772 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-17 14:03:46,774 - __main__ - INFO - Received data for resume generation
+2025-04-17 14:03:46,775 - __main__ - INFO - Generating standard resume
+2025-04-17 14:03:47,076 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-17 14:03:49,731 - __main__ - INFO - Resume generated successfully
+2025-04-17 14:03:49,733 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:03:49] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-17 14:03:51,037 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-17 14:03:51,037 - __main__ - INFO - Received data for resume generation
+2025-04-17 14:03:51,037 - __main__ - INFO - Generating standard resume
+2025-04-17 14:03:51,224 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-17 14:03:54,969 - __main__ - INFO - Resume generated successfully
+2025-04-17 14:03:54,971 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:03:54] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-17 14:03:56,230 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-17 14:03:56,230 - __main__ - INFO - Received data for resume generation
+2025-04-17 14:03:56,230 - __main__ - INFO - Generating standard resume
+2025-04-17 14:03:56,442 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-17 14:03:58,787 - __main__ - INFO - Resume generated successfully
+2025-04-17 14:03:58,789 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:03:58] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-17 14:08:32,893 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-17 14:08:32,899 - __main__ - INFO - Received data for resume generation
+2025-04-17 14:08:32,900 - __main__ - INFO - Generating standard resume
+2025-04-17 14:08:33,120 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-17 14:08:36,386 - __main__ - INFO - Resume generated successfully
+2025-04-17 14:08:36,389 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:08:36] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-17 14:08:39,310 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-17 14:08:39,312 - __main__ - INFO - Received data for resume generation
+2025-04-17 14:08:39,312 - __main__ - INFO - Generating standard resume
+2025-04-17 14:08:39,483 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-17 14:08:42,241 - __main__ - INFO - Resume generated successfully
+2025-04-17 14:08:42,243 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:08:42] "POST /api/generate-resume HTTP/1.1" 200 -

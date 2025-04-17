@@ -33,6 +33,7 @@
    ```
    npm install jspdf html2canvas
    npm install docx file-saver
+   npm install react-icons
    ```
    
 5. Запустите frontend:

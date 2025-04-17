@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import { FaSun, FaMoon, FaDownload, FaShare, FaFilePdf, FaFileWord } from 'react-icons/fa';
 
 function App() {
   const [userData, setUserData] = useState({
@@ -13,16 +14,55 @@ function App() {
     achievements: [],
     additional_info: ''
   });
-
+  const [darkMode, setDarkMode] = useState(false);
   const [resumeType, setResumeType] = useState('standard');
   const [generatedResume, setGeneratedResume] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [progress, setProgress] = useState(0);
   const [error, setError] = useState('');
   const [downloadStatus, setDownloadStatus] = useState({ 
     type: '', 
     loading: false, 
     error: '' 
   });
+
+  // Проверяем сохраненную тему при загрузке
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+      setDarkMode(true);
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  }, []);
+
+  const toggleTheme = () => {
+    const newTheme = !darkMode ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    setDarkMode(!darkMode);
+  };
+
+  // Эффект для анимации прогресса
+  useEffect(() => {
+    if (!isLoading) {
+      setProgress(0);
+      return;
+    }
+
+    const interval = setInterval(() => {
+      setProgress(prev => {
+        if (prev >= 90) {
+          clearInterval(interval);
+          return prev;
+        }
+        return prev + 10;
+      });
+    }, 500);
+
+    return () => clearInterval(interval);
+  }, [isLoading]);
 
   // Обработчики изменений формы
   const handleInputChange = (e) => {
@@ -49,6 +89,7 @@ function App() {
   const generateResume = async () => {
     setIsLoading(true);
     setError('');
+    setProgress(0);
     
     try {
       const response = await fetch('/api/generate-resume', {
@@ -64,8 +105,10 @@ function App() {
       
       if (data.success) {
         setGeneratedResume(data.resume);
+        setProgress(100);
+        setTimeout(() => setProgress(0), 1000);
       } else {
-        setError(data.message);
+        setError(data.message || 'Произошла ошибка при генерации резюме');
       }
     } catch (err) {
       setError('Ошибка при соединении с сервером');
@@ -133,6 +176,9 @@ function App() {
   return (
     <div className="app">
       <header>
+        <button onClick={toggleTheme} className="theme-toggle">
+          {darkMode ? <FaSun /> : <FaMoon />}
+        </button>
         <h1>Генератор резюме с помощью ИИ</h1>
         <p>Автоматическое создание профессиональных резюме</p>
       </header>
@@ -244,6 +290,12 @@ function App() {
             {isLoading ? 'Генерация...' : 'Сгенерировать резюме'}
           </button>
           
+          {isLoading && (
+            <div className="progress-bar">
+              <div className="progress" style={{ width: `${progress}%` }}></div>
+            </div>
+          )}
+          
           {error && <div className="error-message">{error}</div>}
         </div>
         
@@ -257,17 +309,19 @@ function App() {
                   format="pdf"
                   onClick={downloadResume}
                   isLoading={downloadStatus.loading && downloadStatus.type === 'pdf'}
+                  icon={<FaFilePdf />}
                 />
                 <DownloadButton 
                   format="docx"
                   onClick={downloadResume}
                   isLoading={downloadStatus.loading && downloadStatus.type === 'docx'}
+                  icon={<FaFileWord />}
                 />
                 <button 
                   onClick={shareResume}
                   className="share-btn"
                 >
-                  Поделиться
+                  <FaShare /> Поделиться
                 </button>
               </div>
             )}
@@ -320,6 +374,7 @@ const FormSection = ({ title, items, onAdd, onChange, onRemove, placeholder }) =
         <button 
           onClick={() => onRemove(index)}
           className="remove-btn"
+          aria-label="Удалить"
         >
           ×
         </button>
@@ -332,13 +387,13 @@ const FormSection = ({ title, items, onAdd, onChange, onRemove, placeholder }) =
 );
 
 // Компонент для кнопки скачивания
-const DownloadButton = ({ format, onClick, isLoading }) => (
+const DownloadButton = ({ format, onClick, isLoading, icon }) => (
   <button 
     onClick={() => onClick(format)} 
     disabled={isLoading}
     className={`download-btn ${format}`}
   >
-    {isLoading ? 'Генерация...' : format.toUpperCase()}
+    {icon} {isLoading ? 'Генерация...' : format.toUpperCase()}
   </button>
 );
 
@@ -359,7 +414,8 @@ const MarkdownPreview = ({ content }) => (
 // Компонент для пустого состояния резюме
 const EmptyResumePlaceholder = () => (
   <div className="empty-resume">
-    <p>Заполните форму и нажмите "Сгенерировать резюме"</p>
+    <h3>Здесь будет ваше резюме</h3>
+    <p>Заполните форму слева и нажмите "Сгенерировать резюме"</p>
     <p>Система использует Искусственный интеллект для создания профессионального резюме</p>
   </div>
 );
