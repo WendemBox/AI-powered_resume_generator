@@ -1,0 +1,30 @@
+id: modern
+name: Современный
+description: Чистый минималистичный дизайн с акцентом на навыки и технологии
+fields:
+  header:
+    display: flex
+    justify-content: space-between
+  sections:
+    - name: about
+      title: Профиль
+      priority: 1
+    - name: skills
+      title: Ключевые навыки
+      priority: 2
+      columns: 2
+    - name: experience
+      title: Опыт работы
+      priority: 3
+    - name: education
+      title: Образование
+      priority: 4
+styles:
+  primaryColor: "#788eff"
+  secondaryColor: "#6c757d"
+  font: "Arial, sans-serif"
+  spacing: 1.2
+features:
+  - Поддержка иконок технологий
+  - Адаптивный дизайн
+  - Оптимизирован для ATS

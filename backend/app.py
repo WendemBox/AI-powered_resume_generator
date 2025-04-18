@@ -9,12 +9,9 @@ from docx import Document
 import markdown
 import pdfkit
 from datetime import datetime
-from docx import Document
 
-# Загрузка переменных окружения
 load_dotenv()
 
-# Настройка логирования
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -28,12 +25,10 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 CORS(app, supports_credentials=True)
 
-# Конфигурация
 app.config['UPLOAD_FOLDER'] = 'uploads'
 app.config['ALLOWED_EXTENSIONS'] = {'pdf', 'docx', 'txt'}
-app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB
+app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 
-# Конфигурация для pdfkit
 PDFKIT_CONFIG = {
     'page-size': 'A4',
     'margin-top': '0.75in',
@@ -46,7 +41,6 @@ PDFKIT_CONFIG = {
 
 @app.route('/api/generate-resume', methods=['POST'])
 def generate_resume_endpoint():
-    """Генерация текста резюме с помощью Yandex GPT"""
     try:
         logger.info("Received request to /api/generate-resume")
         
@@ -58,20 +52,18 @@ def generate_resume_endpoint():
             }), 400
             
         data = request.json
-        logger.info(f"Received data for resume generation")
+        logger.info(f"Received data for resume generation: {data}")
         
         user_data = data.get('user_data', {})
         resume_type = data.get('resume_type', 'standard')
         
-        # Валидация данных
         if not user_data.get('name'):
             return jsonify({
                 'success': False,
                 'message': 'Поле "ФИО" обязательно для заполнения'
             }), 400
 
-        # Генерация резюме
-        logger.info(f"Generating {resume_type} resume")
+        logger.info(f"Generating {resume_type} resume for {user_data.get('name')}")
         resume_content = generate_resume(user_data, resume_type)
         
         logger.info("Resume generated successfully")
@@ -89,7 +81,6 @@ def generate_resume_endpoint():
 
 @app.route('/api/download-resume', methods=['POST'])
 def download_resume():
-    """Генерация и скачивание резюме в выбранном формате"""
     try:
         logger.info("Received request to /api/download-resume")
         
@@ -116,14 +107,11 @@ def download_resume():
                 'message': 'Неподдерживаемый формат файла'
             }), 400
 
-        # Создаем временный файл
         with tempfile.NamedTemporaryFile(delete=False, suffix=f'.{format_type}') as temp_file:
             temp_path = temp_file.name
             
             if format_type == 'pdf':
-                # Конвертация Markdown в HTML
                 html_content = markdown.markdown(resume_content)
-                # Добавляем базовые стили
                 html_content = f"""
                 <!DOCTYPE html>
                 <html>
@@ -147,7 +135,6 @@ def download_resume():
             elif format_type == 'docx':
                 doc = Document()
                 
-                # Парсим Markdown и добавляем в DOCX
                 current_paragraph = None
                 for line in resume_content.split('\n'):
                     if line.startswith('# '):
@@ -169,7 +156,6 @@ def download_resume():
         
         logger.info(f"File generated successfully: {temp_path}")
         
-        # Отправка файла клиенту
         return send_file(
             temp_path,
             as_attachment=True,
@@ -184,7 +170,6 @@ def download_resume():
             'message': f'Ошибка при генерации файла: {str(e)}'
         }), 500
     finally:
-        # Удаление временного файла после отправки
         try:
             if 'temp_path' in locals() and os.path.exists(temp_path):
                 os.unlink(temp_path)
@@ -193,7 +178,6 @@ def download_resume():
 
 @app.route('/api/health', methods=['GET'])
 def health_check():
-    """Проверка работоспособности API"""
     return jsonify({
         'status': 'OK',
         'message': 'Resume Generator API is running',
@@ -202,11 +186,9 @@ def health_check():
     })
 
 if __name__ == '__main__':
-    # Создаем папку для загрузок, если её нет
     if not os.path.exists(app.config['UPLOAD_FOLDER']):
         os.makedirs(app.config['UPLOAD_FOLDER'])
     
-    # Запускаем сервер
     app.run(debug=os.getenv('FLASK_DEBUG', 'false').lower() == 'true', 
            port=int(os.getenv('FLASK_PORT', 5000)),
            host=os.getenv('FLASK_HOST', '0.0.0.0'))

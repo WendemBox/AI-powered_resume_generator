@@ -8,7 +8,6 @@ import datetime
 
 load_dotenv()
 
-# Настройка логирования
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -26,7 +25,6 @@ class YandexGPT:
         self.api_url = "https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
         
     def _get_iam_token(self):
-        """Получает IAM токен через Yandex Cloud API"""
         if not all([os.getenv('YC_SERVICE_ACCOUNT_ID'), 
                    os.getenv('YC_ACCESS_KEY_ID'), 
                    os.getenv('YC_PRIVATE_KEY')]):
@@ -44,7 +42,6 @@ class YandexGPT:
             return self.iam_token
     
     def _create_jwt(self):
-        """Создает JWT для получения IAM токена"""
         now = datetime.datetime.utcnow()
         service_account_id = os.getenv('YC_SERVICE_ACCOUNT_ID')
         key_id = os.getenv('YC_ACCESS_KEY_ID')
@@ -65,7 +62,6 @@ class YandexGPT:
         )
         
     def generate(self, prompt):
-        """Отправляет запрос к Yandex GPT API"""
         headers = {
             "Authorization": f"Bearer {self._get_iam_token()}",
             "x-folder-id": self.folder_id,
@@ -73,18 +69,20 @@ class YandexGPT:
         }
         
         data = {
-            "modelUri": f"gpt://{self.folder_id}/yandexgpt-lite",
+            "modelUri": f"gpt://{self.folder_id}/yandexgpt-lite/rc",
             "completionOptions": {
                 "stream": False,
-                "temperature": 0.6,
-                "maxTokens": 2000
+                "temperature": 0.8,
+                "maxTokens": 4000
             },
             "messages": [
                 {
                     "role": "system",
                     "text": (
-                        "Ты профессиональный HR-специалист. Создай четкое, структурированное резюме на русском языке "
-                        "в формате Markdown. Используй заголовки, списки и форматирование для лучшей читаемости."
+                        "Ты профессиональный HR-специалист. Создай персонализированное резюме на русском языке "
+                        "в формате Markdown на основе точных данных пользователя. Используй заголовки, списки и форматирование. "
+                        "Учитывай все предоставленные данные. Сделай резюме уникальным и адаптированным под указанную должность. "
+                        "Добавь конкретные цифры и показатели в достижениях. Используй профессиональный язык."
                     )
                 },
                 {
@@ -102,13 +100,15 @@ class YandexGPT:
                 response.raise_for_status()
                 result = response.json()
                 
+                logger.info(f"Full Yandex GPT response: {result}")
+                
                 if 'result' not in result or 'alternatives' not in result['result']:
                     raise ValueError("Invalid response format from Yandex GPT")
                 
                 return result['result']['alternatives'][0]['message']['text']
                 
             except requests.exceptions.HTTPError as e:
-                if e.response.status_code == 401:  # Token expired
+                if e.response.status_code == 401:
                     self.iam_token = self._get_iam_token()
                     headers["Authorization"] = f"Bearer {self.iam_token}"
                     continue
@@ -123,22 +123,18 @@ class YandexGPT:
         raise Exception("Yandex GPT error: Max retries exceeded")
 
 def generate_resume(user_data, resume_type='standard'):
-    """Генерирует резюме на основе данных пользователя"""
     yagpt = YandexGPT()
     prompt = create_prompt(user_data, resume_type)
+    logger.info(f"Generated prompt for Yandex GPT: {prompt}")
     return yagpt.generate(prompt)
 
 def create_prompt(user_data, resume_type):
-    """Создает промт для Yandex GPT на основе данных пользователя"""
     format_instructions = {
         'standard': "классический формат с четким структурированием разделов",
-        'chronological': "хронологический формат с акцентом на опыт работы в обратном хронологическом порядке",
-        'functional': "функциональный формат с акцентом на навыки и достижения",
+        'chronological': "хронологический формат с акцентом на опыт работы",
+        'functional': "функциональный формат с акцентом на навыки",
         'targeted': "целевое резюме, адаптированное под конкретную вакансию",
-        'creative': "креативный формат с уникальным стилем",
-        'academic': "академический формат с акцентом на образование и публикации",
-        'it': "формат для IT-специалиста с техническими деталями",
-        'business': "деловой формат с бизнес-метриками"
+        'creative': "креативный формат с уникальным стилем"
     }.get(resume_type, "профессиональный формат")
     
     target_position = user_data.get('target_position', '')
@@ -146,50 +142,56 @@ def create_prompt(user_data, resume_type):
     
     prompt = f"""
     Создай профессиональное резюме на русском языке в {format_instructions}{position_context}.
-    Используй Markdown-разметку для форматирования.
+    Используй Markdown-разметку. Включи все предоставленные данные.
 
     ### Основные данные:
-    - Имя: {user_data.get('name', 'Не указано')}
+    - Полное имя: {user_data.get('name', 'Не указано')}
     - Контакты: {user_data.get('contacts', 'Не указаны')}
     - Целевая позиция: {target_position or 'Не указана'}
-
-    ### О себе:
-    {user_data.get('about', 'Не указано')}
+    - О себе: {user_data.get('about', 'Не указано')}
 
     ### Ключевые навыки:
-    {format_list(user_data.get('skills', []))}
+    {format_list(user_data.get('skills', []), include_level=True)}
 
     ### Опыт работы:
-    {format_list(user_data.get('experience', []), include_dates=True)}
+    {format_list(user_data.get('experience', []), include_dates=True, detailed=True)}
 
     ### Образование:
     {format_list(user_data.get('education', []), include_dates=True)}
 
     ### Достижения:
-    {format_list(user_data.get('achievements', []))}
+    {format_list(user_data.get('achievements', []), quantified=True)}
 
     ### Дополнительная информация:
     {user_data.get('additional_info', 'Не указано')}
 
     ### Инструкции:
-    1. Используй профессиональный язык
-    2. Выдели ключевые моменты для {target_position or 'указанной сферы'}
-    3. Добавь количественные показатели где возможно
-    4. Оптимизируй под {format_instructions}
-    5. Верни результат в формате Markdown
+    1. Сделай резюме уникальным и персонализированным
+    2. Используй профессиональный язык
+    3. Добавь количественные показатели везде, где возможно
+    4. Адаптируй содержание под целевую позицию
+    5. Соблюдай структуру и формат Markdown
     """
     return prompt
 
-def format_list(items, include_dates=False):
-    """Форматирует список элементов для промта"""
+def format_list(items, include_dates=False, include_level=False, detailed=False, quantified=False):
     if not items:
         return "Не указано"
     
     formatted = []
     for item in items:
+        line = "- "
         if include_dates and any(x in item.lower() for x in ['год', 'лет', 'года', 'месяц']):
-            formatted.append(f"- {item} (укажи временные периоды явно)")
+            line += f"{item} (укажи временные периоды явно)"
+        elif include_level:
+            line += f"{item} [укажи уровень владения]"
+        elif detailed:
+            line += f"{item}. Подробно опиши обязанности и достижения"
+        elif quantified:
+            line += f"{item}. Укажи конкретные результаты с цифрами"
         else:
-            formatted.append(f"- {item}")
+            line += item
+        
+        formatted.append(line)
     
     return "\n".join(formatted) if formatted else "Не указано"

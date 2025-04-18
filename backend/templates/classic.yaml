@@ -1,0 +1,29 @@
+id: classic
+name: Классический
+description: Традиционное резюме с хронологическим порядком
+fields:
+  sections:
+    - name: about
+      title: О себе
+      priority: 1
+    - name: experience
+      title: Профессиональный опыт
+      priority: 2
+    - name: education
+      title: Образование
+      priority: 3
+    - name: skills
+      title: Навыки
+      priority: 4
+    - name: additional_info
+      title: Дополнительная информация
+      priority: 5
+styles:
+  primaryColor: "#333333"
+  secondaryColor: "#555555"
+  font: "Times New Roman, serif"
+  spacing: 1.5
+features:
+  - Стандартный формат
+  - Универсальность
+  - Четкая структура

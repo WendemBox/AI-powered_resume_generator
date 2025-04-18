@@ -1,0 +1,33 @@
+id: academic
+name: Академический
+description: Формальное резюме для научной сферы
+fields:
+  sections:
+    - name: education
+      title: Образование
+      priority: 1
+      subsections:
+        - degree
+        - university
+        - year
+    - name: publications
+      title: Публикации
+      priority: 2
+    - name: research
+      title: Исследовательский опыт
+      priority: 3
+    - name: teaching
+      title: Преподавательский опыт
+      priority: 4
+    - name: conferences
+      title: Конференции
+      priority: 5
+styles:
+  primaryColor: "#2c3e50"
+  secondaryColor: "#7f8c8d"
+  font: "Georgia, serif"
+  spacing: 1.6
+features:
+  - Подробные академические разделы
+  - Формальный стиль
+  - Поддержка библиографии

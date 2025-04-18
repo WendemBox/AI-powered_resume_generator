@@ -1,981 +1,135 @@
-2025-04-08 15:48:12,095 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-04-08 15:48:12,095 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2025-04-08 15:48:12,097 - werkzeug - INFO -  * Restarting with stat
-2025-04-08 15:48:12,644 - werkzeug - WARNING -  * Debugger is active!
-2025-04-08 15:48:12,644 - werkzeug - INFO -  * Debugger PIN: 786-309-082
-2025-04-08 15:52:00,221 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-04-08 15:52:00,221 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2025-04-08 15:52:00,225 - werkzeug - INFO -  * Restarting with stat
-2025-04-08 15:52:00,794 - werkzeug - WARNING -  * Debugger is active!
-2025-04-08 15:52:00,795 - werkzeug - INFO -  * Debugger PIN: 786-309-082
-2025-04-08 16:03:27,378 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-04-18 09:41:48,382 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-18 09:41:48,384 - __main__ - INFO - Received data for resume generation
+2025-04-18 09:41:48,384 - __main__ - INFO - Generating standard resume
+2025-04-18 09:41:48,556 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-18 09:41:51,388 - __main__ - INFO - Resume generated successfully
+2025-04-18 09:41:51,390 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 09:41:51] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-18 09:42:24,459 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
- * Running on http://192.168.0.14:5000
-2025-04-08 16:03:27,378 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2025-04-08 16:03:27,379 - werkzeug - INFO -  * Restarting with stat
-2025-04-08 16:03:27,917 - werkzeug - WARNING -  * Debugger is active!
-2025-04-08 16:03:27,918 - werkzeug - INFO -  * Debugger PIN: 786-309-082
-2025-04-08 16:04:55,631 - werkzeug - INFO - 192.168.0.10 - - [08/Apr/2025 16:04:55] "[35m[1mPOST /api/generate-resume HTTP/1.1[0m" 500 -
-2025-04-08 16:08:41,775 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.0.14:5000
-2025-04-08 16:08:41,775 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2025-04-08 16:08:41,776 - werkzeug - INFO -  * Restarting with stat
-2025-04-08 16:08:42,474 - werkzeug - WARNING -  * Debugger is active!
-2025-04-08 16:08:42,476 - werkzeug - INFO -  * Debugger PIN: 786-309-082
-2025-04-08 16:11:30,280 - werkzeug - INFO - 192.168.0.10 - - [08/Apr/2025 16:11:30] "[35m[1mPOST /api/generate-resume HTTP/1.1[0m" 500 -
-2025-04-08 16:16:56,905 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.0.14:5000
-2025-04-08 16:16:56,905 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2025-04-08 16:16:56,906 - werkzeug - INFO -  * Restarting with stat
-2025-04-08 16:16:57,374 - werkzeug - WARNING -  * Debugger is active!
-2025-04-08 16:16:57,374 - werkzeug - INFO -  * Debugger PIN: 786-309-082
-2025-04-08 16:17:57,386 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-08 16:18:01,515 - werkzeug - INFO - 192.168.0.10 - - [08/Apr/2025 16:18:01] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-08 16:22:27,873 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.0.14:5000
-2025-04-08 16:22:27,873 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2025-04-08 16:22:27,874 - werkzeug - INFO -  * Restarting with stat
-2025-04-08 16:22:28,337 - werkzeug - WARNING -  * Debugger is active!
-2025-04-08 16:22:28,338 - werkzeug - INFO -  * Debugger PIN: 786-309-082
-2025-04-08 16:23:19,656 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 16:23:19] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
-2025-04-08 16:23:19,659 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 16:23:19] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
-2025-04-08 16:23:19,663 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 16:23:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-04-08 16:23:22,476 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 16:23:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-04-08 16:25:06,787 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-08 16:25:09,863 - werkzeug - INFO - 192.168.0.10 - - [08/Apr/2025 16:25:09] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-08 16:26:19,812 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-08 16:26:22,733 - werkzeug - INFO - 192.168.0.10 - - [08/Apr/2025 16:26:22] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-08 16:27:14,185 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-08 16:27:17,414 - werkzeug - INFO - 192.168.0.10 - - [08/Apr/2025 16:27:17] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-08 16:31:25,415 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 16:31:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-04-08 16:31:27,522 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 16:31:27] "OPTIONS /api/generate-resume HTTP/1.1" 200 -
-2025-04-08 16:33:53,921 - werkzeug - INFO - 192.168.0.10 - - [08/Apr/2025 16:33:53] "[33mGET / HTTP/1.1[0m" 404 -
-2025-04-08 16:33:54,009 - werkzeug - INFO - 192.168.0.10 - - [08/Apr/2025 16:33:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-04-14 15:42:34,194 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.0.14:5000
-2025-04-14 15:42:34,194 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2025-04-14 15:42:34,195 - werkzeug - INFO -  * Restarting with stat
-2025-04-14 15:42:34,628 - werkzeug - WARNING -  * Debugger is active!
-2025-04-14 15:42:34,633 - werkzeug - INFO -  * Debugger PIN: 571-313-961
-2025-04-14 15:43:05,866 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-14 15:43:08,623 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 15:43:08] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 15:44:18,159 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-14 15:44:20,771 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 15:44:20] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 15:44:22,306 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-14 15:44:24,997 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 15:44:24] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 15:44:32,581 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 15:44:32] "[35m[1mPOST /api/generate-resume HTTP/1.1[0m" 500 -
-2025-04-14 15:44:55,670 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 15:44:55] "[35m[1mPOST /api/generate-resume HTTP/1.1[0m" 500 -
-2025-04-14 15:45:57,566 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 15:45:57] "[35m[1mPOST /api/generate-resume HTTP/1.1[0m" 500 -
-2025-04-14 15:46:26,497 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-14 15:46:29,306 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 15:46:29] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 15:46:36,221 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-14 15:46:39,157 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 15:46:39] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 15:47:32,794 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-14 15:47:36,002 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 15:47:36] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 15:52:17,795 - werkzeug - INFO -  * Detected change in '/home/wendembox/vkr/backend/app.py', reloading
-2025-04-14 15:52:17,899 - werkzeug - INFO -  * Restarting with stat
-2025-04-14 15:52:18,339 - werkzeug - WARNING -  * Debugger is active!
-2025-04-14 15:52:18,340 - werkzeug - INFO -  * Debugger PIN: 571-313-961
-2025-04-14 15:52:23,942 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.0.14:5000
-2025-04-14 15:52:23,943 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2025-04-14 15:52:23,944 - werkzeug - INFO -  * Restarting with stat
-2025-04-14 15:52:24,357 - werkzeug - WARNING -  * Debugger is active!
-2025-04-14 15:52:24,357 - werkzeug - INFO -  * Debugger PIN: 571-313-961
-2025-04-14 15:54:24,877 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.0.14:5000
-2025-04-14 15:54:24,878 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2025-04-14 15:54:24,879 - werkzeug - INFO -  * Restarting with stat
-2025-04-14 15:54:25,301 - werkzeug - WARNING -  * Debugger is active!
-2025-04-14 15:54:25,301 - werkzeug - INFO -  * Debugger PIN: 940-762-772
-2025-04-14 15:56:14,198 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 15:56:14] "GET /api/health HTTP/1.1" 200 -
-2025-04-14 15:56:30,828 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-14 15:56:30,828 - __main__ - INFO - Received data: {'user_data': {'name': 'Тест'}, 'resume_type': 'standard'}
-2025-04-14 15:56:30,829 - __main__ - INFO - Generating resume with type: standard
-2025-04-14 15:56:31,181 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-14 15:56:34,389 - __main__ - INFO - Resume generated successfully
-2025-04-14 15:56:34,390 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 15:56:34] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 15:56:38,221 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 15:56:38] "GET /api/health HTTP/1.1" 200 -
-2025-04-14 15:56:45,636 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-14 15:56:45,636 - __main__ - INFO - Received data: {'user_data': {'name': 'Тест'}, 'resume_type': 'standard'}
-2025-04-14 15:56:45,636 - __main__ - INFO - Generating resume with type: standard
-2025-04-14 15:56:45,935 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-14 15:56:49,099 - __main__ - INFO - Resume generated successfully
-2025-04-14 15:56:49,099 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 15:56:49] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 16:01:37,709 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:01:37] "OPTIONS /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 16:01:37,737 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-14 16:01:37,738 - __main__ - INFO - Received data: {'user_data': {'name': '', 'contacts': '', 'about': '', 'education': [], 'experience': [], 'skills': [], 'achievements': [], 'additional_info': ''}, 'resume_type': 'standard'}
-2025-04-14 16:01:37,738 - __main__ - INFO - Generating resume with type: standard
-2025-04-14 16:01:38,013 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-14 16:01:40,478 - __main__ - INFO - Resume generated successfully
-2025-04-14 16:01:40,478 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:01:40] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 16:02:25,015 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:02:25] "OPTIONS /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 16:02:25,024 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-14 16:02:25,024 - __main__ - INFO - Received data: {'user_data': {'name': 'Фролов Степан Алексеевич', 'contacts': '899999999', 'about': 'Хуесос', 'education': ['ПГУТИ '], 'experience': ['Год на Т1'], 'skills': ['Сосать хуи'], 'achievements': ['Мастерски полирую лысого'], 'additional_info': ''}, 'resume_type': 'standard'}
-2025-04-14 16:02:25,025 - __main__ - INFO - Generating resume with type: standard
-2025-04-14 16:02:25,276 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-14 16:02:27,913 - __main__ - INFO - Resume generated successfully
-2025-04-14 16:02:27,913 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:02:27] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 16:04:13,309 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:04:13] "OPTIONS /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 16:04:13,320 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-14 16:04:13,321 - __main__ - INFO - Received data: {'user_data': {'name': 'Фролов Степан Алексеевич', 'contacts': '899999999', 'about': 'Хуесос', 'education': ['ПГУТИ '], 'experience': ['Год на Т1'], 'skills': ['Сосать хуи'], 'achievements': ['Мастерски полирую лысого'], 'additional_info': ''}, 'resume_type': 'chronological'}
-2025-04-14 16:04:13,321 - __main__ - INFO - Generating resume with type: chronological
-2025-04-14 16:04:13,592 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-14 16:04:16,364 - __main__ - INFO - Resume generated successfully
-2025-04-14 16:04:16,364 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:04:16] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 16:04:25,514 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:04:25] "OPTIONS /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 16:04:25,525 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-14 16:04:25,526 - __main__ - INFO - Received data: {'user_data': {'name': 'Фролов Степан Алексеевич', 'contacts': '899999999', 'about': 'Хуесос', 'education': ['ПГУТИ '], 'experience': ['Год на Т1'], 'skills': ['Сосать хуи'], 'achievements': ['Мастерски полирую лысого'], 'additional_info': ''}, 'resume_type': 'functional'}
-2025-04-14 16:04:25,526 - __main__ - INFO - Generating resume with type: functional
-2025-04-14 16:04:25,839 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-14 16:04:28,600 - __main__ - INFO - Resume generated successfully
-2025-04-14 16:04:28,601 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:04:28] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 16:04:55,662 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:04:55] "OPTIONS /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 16:04:55,670 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-14 16:04:55,671 - __main__ - INFO - Received data: {'user_data': {'name': 'Фролов Степан Алексеевич', 'contacts': '899999999', 'about': 'Хуесос', 'education': ['ПГУТИ '], 'experience': ['Год на Т1'], 'skills': ['Сосать хуи'], 'achievements': ['Мастерски полирую лысого'], 'additional_info': ''}, 'resume_type': 'targeted'}
-2025-04-14 16:04:55,671 - __main__ - INFO - Generating resume with type: targeted
-2025-04-14 16:04:55,932 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-14 16:04:58,487 - __main__ - INFO - Resume generated successfully
-2025-04-14 16:04:58,488 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:04:58] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 16:05:03,218 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:05:03] "OPTIONS /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 16:05:03,234 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-14 16:05:03,237 - __main__ - INFO - Received data: {'user_data': {'name': 'Фролов Степан Алексеевич', 'contacts': '899999999', 'about': 'Хуесос', 'education': ['ПГУТИ '], 'experience': ['Год на Т1'], 'skills': ['Сосать хуи'], 'achievements': ['Мастерски полирую лысого'], 'additional_info': ''}, 'resume_type': 'targeted'}
-2025-04-14 16:05:03,239 - __main__ - INFO - Generating resume with type: targeted
-2025-04-14 16:05:03,523 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-14 16:05:06,373 - __main__ - INFO - Resume generated successfully
-2025-04-14 16:05:06,374 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:05:06] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 16:05:09,928 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:05:09] "OPTIONS /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 16:05:09,937 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-14 16:05:09,937 - __main__ - INFO - Received data: {'user_data': {'name': 'Фролов Степан Алексеевич', 'contacts': '899999999', 'about': 'Хуесос', 'education': ['ПГУТИ '], 'experience': ['Год на Т1'], 'skills': ['Сосать хуи'], 'achievements': ['Мастерски полирую лысого'], 'additional_info': ''}, 'resume_type': 'targeted'}
-2025-04-14 16:05:09,937 - __main__ - INFO - Generating resume with type: targeted
-2025-04-14 16:05:10,200 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-14 16:05:13,038 - __main__ - INFO - Resume generated successfully
-2025-04-14 16:05:13,039 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:05:13] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 16:05:27,040 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:05:27] "OPTIONS /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 16:05:27,051 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-14 16:05:27,051 - __main__ - INFO - Received data: {'user_data': {'name': 'Фролов Степан Алексеевич', 'contacts': '899999999', 'about': 'Хуесос', 'education': ['ПГУТИ '], 'experience': ['Год на Т1'], 'skills': ['Сосать хуи'], 'achievements': ['Мастерски полирую лысого'], 'additional_info': ''}, 'resume_type': 'targeted'}
-2025-04-14 16:05:27,051 - __main__ - INFO - Generating resume with type: targeted
-2025-04-14 16:05:27,319 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-14 16:05:30,288 - __main__ - INFO - Resume generated successfully
-2025-04-14 16:05:30,289 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:05:30] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 16:05:57,730 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:05:57] "OPTIONS /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 16:05:57,744 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-14 16:05:57,744 - __main__ - INFO - Received data: {'user_data': {'name': 'Фролов Степан Алексеевич', 'contacts': '899999999', 'about': 'Хуесос', 'education': ['ПГУТИ '], 'experience': ['Год на Т1'], 'skills': ['Сосать хуи'], 'achievements': ['Мастерски полирую лысого'], 'additional_info': ''}, 'resume_type': 'targeted'}
-2025-04-14 16:05:57,744 - __main__ - INFO - Generating resume with type: targeted
-2025-04-14 16:05:57,998 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-14 16:06:00,792 - __main__ - INFO - Resume generated successfully
-2025-04-14 16:06:00,792 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:06:00] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 16:06:22,865 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:06:22] "OPTIONS /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 16:06:22,875 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-14 16:06:22,876 - __main__ - INFO - Received data: {'user_data': {'name': 'Фролов Степан Алексеевич', 'contacts': '899999999', 'about': 'Хуесос', 'education': ['ПГУТИ '], 'experience': ['Год на Т1'], 'skills': ['Сосать хуи'], 'achievements': ['Мастерски полирую лысого'], 'additional_info': ''}, 'resume_type': 'targeted'}
-2025-04-14 16:06:22,876 - __main__ - INFO - Generating resume with type: targeted
-2025-04-14 16:06:24,312 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-14 16:06:27,087 - __main__ - INFO - Resume generated successfully
-2025-04-14 16:06:27,087 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:06:27] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 16:06:29,759 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:06:29] "OPTIONS /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 16:06:29,769 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-14 16:06:29,769 - __main__ - INFO - Received data: {'user_data': {'name': 'Фролов Степан Алексеевич', 'contacts': '899999999', 'about': 'Хуесос', 'education': ['ПГУТИ '], 'experience': ['Год на Т1'], 'skills': ['Сосать хуи'], 'achievements': ['Мастерски полирую лысого'], 'additional_info': ''}, 'resume_type': 'targeted'}
-2025-04-14 16:06:29,769 - __main__ - INFO - Generating resume with type: targeted
-2025-04-14 16:06:30,483 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-14 16:06:33,483 - __main__ - INFO - Resume generated successfully
-2025-04-14 16:06:33,483 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:06:33] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 16:06:40,180 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:06:40] "OPTIONS /api/generate-resume HTTP/1.1" 200 -
-2025-04-14 16:06:40,189 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-14 16:06:40,190 - __main__ - INFO - Received data: {'user_data': {'name': 'Фролов Степан Алексеевич', 'contacts': '899999999', 'about': 'Хуесос', 'education': ['ПГУТИ '], 'experience': ['Год на Т1'], 'skills': ['Сосать хуи'], 'achievements': ['Мастерски полирую лысого'], 'additional_info': ''}, 'resume_type': 'targeted'}
-2025-04-14 16:06:40,191 - __main__ - INFO - Generating resume with type: targeted
-2025-04-14 16:06:40,450 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-14 16:06:43,485 - __main__ - INFO - Resume generated successfully
-2025-04-14 16:06:43,486 - werkzeug - INFO - 192.168.0.10 - - [14/Apr/2025 16:06:43] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-15 08:34:54,532 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.0.10:5000
-2025-04-15 08:34:54,532 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2025-04-15 08:34:54,533 - werkzeug - INFO -  * Restarting with stat
-2025-04-15 08:34:54,661 - werkzeug - WARNING -  * Debugger is active!
-2025-04-15 08:34:54,668 - werkzeug - INFO -  * Debugger PIN: 102-140-389
-2025-04-15 08:36:59,859 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 08:36:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-04-15 08:37:26,596 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 08:37:26] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
-2025-04-15 08:37:26,613 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 08:37:26] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
-2025-04-15 08:37:27,114 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 08:37:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-04-15 08:43:14,077 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 08:43:14] "OPTIONS /api/generate-resume HTTP/1.1" 200 -
-2025-04-15 08:43:14,083 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-15 08:43:14,085 - __main__ - INFO - Received data: {'user_data': {'name': '', 'contacts': '', 'about': '', 'education': [], 'experience': [], 'skills': [], 'achievements': [], 'additional_info': ''}, 'resume_type': 'standard'}
-2025-04-15 08:43:14,085 - __main__ - INFO - Generating resume with type: standard
-2025-04-15 08:43:14,389 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-15 08:43:17,207 - __main__ - INFO - Resume generated successfully
-2025-04-15 08:43:17,209 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 08:43:17] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-15 08:43:21,813 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 08:43:21] "OPTIONS /api/generate-resume HTTP/1.1" 200 -
-2025-04-15 08:43:21,820 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-15 08:43:21,821 - __main__ - INFO - Received data: {'user_data': {'name': '', 'contacts': '', 'about': '', 'education': [], 'experience': [], 'skills': [], 'achievements': [], 'additional_info': ''}, 'resume_type': 'standard'}
-2025-04-15 08:43:21,821 - __main__ - INFO - Generating resume with type: standard
-2025-04-15 08:43:22,002 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-15 08:43:24,647 - __main__ - INFO - Resume generated successfully
-2025-04-15 08:43:24,647 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 08:43:24] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-15 08:45:48,483 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-15 08:45:48,484 - __main__ - INFO - Received data: {'user_data': {'name': '', 'contacts': '', 'about': '', 'education': [], 'experience': [], 'skills': [], 'achievements': [], 'additional_info': ''}, 'resume_type': 'standard'}
-2025-04-15 08:45:48,484 - __main__ - INFO - Generating resume with type: standard
-2025-04-15 08:45:48,676 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-15 08:45:50,914 - __main__ - INFO - Resume generated successfully
-2025-04-15 08:45:50,915 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 08:45:50] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-15 08:45:53,434 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-15 08:45:53,434 - __main__ - INFO - Received data: {'user_data': {'name': '', 'contacts': '', 'about': '', 'education': [], 'experience': [], 'skills': [], 'achievements': [], 'additional_info': ''}, 'resume_type': 'standard'}
-2025-04-15 08:45:53,435 - __main__ - INFO - Generating resume with type: standard
-2025-04-15 08:45:53,626 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-15 08:45:56,454 - __main__ - INFO - Resume generated successfully
-2025-04-15 08:45:56,455 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 08:45:56] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-15 08:47:12,569 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-15 08:47:12,570 - __main__ - INFO - Received data: {'user_data': {'name': '', 'contacts': '', 'about': '', 'education': [], 'experience': [], 'skills': [], 'achievements': [], 'additional_info': ''}, 'resume_type': 'standard'}
-2025-04-15 08:47:12,570 - __main__ - INFO - Generating resume with type: standard
-2025-04-15 08:47:12,745 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-15 08:47:15,451 - __main__ - INFO - Resume generated successfully
-2025-04-15 08:47:15,452 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 08:47:15] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-15 15:05:24,553 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.0.10:5000
-2025-04-15 15:05:24,553 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2025-04-15 15:05:24,554 - werkzeug - INFO -  * Restarting with stat
-2025-04-15 15:05:24,678 - werkzeug - WARNING -  * Debugger is active!
-2025-04-15 15:05:24,685 - werkzeug - INFO -  * Debugger PIN: 102-140-389
-2025-04-15 15:05:43,872 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 15:05:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-04-15 15:05:45,869 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-15 15:05:45,870 - __main__ - INFO - Received data: {'user_data': {'name': '', 'contacts': '', 'about': '', 'education': [], 'experience': [], 'skills': [], 'achievements': [], 'additional_info': ''}, 'resume_type': 'standard'}
-2025-04-15 15:05:45,870 - __main__ - INFO - Generating resume with type: standard
-2025-04-15 15:05:46,164 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-15 15:05:50,866 - __main__ - INFO - Resume generated successfully
-2025-04-15 15:05:50,866 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 15:05:50] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-15 15:08:11,753 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-15 15:08:11,756 - __main__ - INFO - Received data: {'user_data': {'name': 'Фролов Степан Алексеевич', 'contacts': '89277152133', 'about': 'Веселый\nДисциплинированный\nСлегка ленивый', 'education': ['ПГУТИ бакалавриат Разработка программно информационных систем', 'ПГУТИ магистратура Искуственный интеллект'], 'experience': ['Yandex Cloud инженер облачной поддержки Т1 1 год'], 'skills': ['MDB', 'PostgesSQL ', 'Быстро учусь'], 'achievements': [], 'additional_info': ''}, 'resume_type': 'standard'}
-2025-04-15 15:08:11,756 - __main__ - INFO - Generating resume with type: standard
-2025-04-15 15:08:12,023 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-15 15:08:15,321 - __main__ - INFO - Resume generated successfully
-2025-04-15 15:08:15,323 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 15:08:15] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-15 15:10:48,904 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-15 15:10:48,906 - __main__ - INFO - Received data: {'user_data': {'name': 'Фролов Степан Алексеевич', 'contacts': '89277152133', 'about': 'Веселый\nДисциплинированный\nСлегка ленивый', 'education': ['ПГУТИ бакалавриат Разработка программно информационных систем', 'ПГУТИ магистратура Искуственный интеллект'], 'experience': ['Yandex Cloud инженер облачной поддержки Т1 1 год'], 'skills': ['MDB', 'PostgesSQL ', 'Быстро учусь', 'Linux', 'Программирование'], 'achievements': [], 'additional_info': ''}, 'resume_type': 'functional'}
-2025-04-15 15:10:48,906 - __main__ - INFO - Generating resume with type: functional
-2025-04-15 15:10:50,106 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-15 15:10:53,821 - __main__ - INFO - Resume generated successfully
-2025-04-15 15:10:53,823 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 15:10:53] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-15 15:11:13,797 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-15 15:11:13,798 - __main__ - INFO - Received data: {'user_data': {'name': 'Фролов Степан Алексеевич', 'contacts': '89277152133', 'about': 'Веселый\nДисциплинированный\nСлегка ленивый', 'education': ['ПГУТИ бакалавриат Разработка программно информационных систем', 'ПГУТИ магистратура Искуственный интеллект'], 'experience': ['Yandex Cloud инженер облачной поддержки Т1 1 год'], 'skills': ['MDB', 'PostgesSQL ', 'Быстро учусь', 'Linux', 'Программирование'], 'achievements': [], 'additional_info': ''}, 'resume_type': 'targeted'}
-2025-04-15 15:11:13,798 - __main__ - INFO - Generating resume with type: targeted
-2025-04-15 15:11:14,035 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-15 15:11:18,339 - __main__ - INFO - Resume generated successfully
-2025-04-15 15:11:18,342 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 15:11:18] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-15 15:11:31,776 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-15 15:11:31,776 - __main__ - INFO - Received data: {'user_data': {'name': 'Фролов Степан Алексеевич', 'contacts': '89277152133', 'about': 'Веселый\nДисциплинированный\nСлегка ленивый', 'education': ['ПГУТИ бакалавриат Разработка программно информационных систем', 'ПГУТИ магистратура Искуственный интеллект'], 'experience': ['Yandex Cloud инженер облачной поддержки Т1 1 год'], 'skills': ['MDB', 'PostgesSQL ', 'Быстро учусь', 'Linux', 'Программирование'], 'achievements': [], 'additional_info': ''}, 'resume_type': 'chronological'}
-2025-04-15 15:11:31,776 - __main__ - INFO - Generating resume with type: chronological
-2025-04-15 15:11:32,010 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-15 15:11:36,243 - __main__ - INFO - Resume generated successfully
-2025-04-15 15:11:36,245 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 15:11:36] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-16 10:56:31,642 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.0.10:5000
-2025-04-16 10:56:31,642 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2025-04-16 10:56:31,643 - werkzeug - INFO -  * Restarting with stat
-2025-04-16 10:56:31,771 - werkzeug - WARNING -  * Debugger is active!
-2025-04-16 10:56:31,778 - werkzeug - INFO -  * Debugger PIN: 102-140-389
-2025-04-16 10:56:41,697 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 10:56:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-04-16 11:03:09,463 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 11:03:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-04-16 11:14:07,388 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-16 11:14:07,398 - __main__ - INFO - Received data: {'user_data': {'name': '', 'contacts': '', 'about': '', 'education': [], 'experience': [], 'skills': [], 'achievements': [], 'additional_info': ''}, 'resume_type': 'standard'}
-2025-04-16 11:14:07,398 - __main__ - INFO - Generating resume with type: standard
-2025-04-16 11:14:07,725 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-16 11:14:12,187 - __main__ - INFO - Resume generated successfully
-2025-04-16 11:14:12,201 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 11:14:12] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-16 11:22:55,332 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-16 11:22:55,334 - __main__ - INFO - Received data: {'user_data': {'name': '', 'contacts': '', 'about': '', 'education': [], 'experience': [], 'skills': [], 'achievements': [], 'additional_info': ''}, 'resume_type': 'standard'}
-2025-04-16 11:22:55,334 - __main__ - INFO - Generating resume with type: standard
-2025-04-16 11:22:55,537 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-16 11:23:00,226 - __main__ - INFO - Resume generated successfully
-2025-04-16 11:23:00,227 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 11:23:00] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-16 11:23:04,830 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-16 11:23:04,830 - __main__ - INFO - Received data: {'user_data': {'name': '', 'contacts': '', 'about': '', 'education': [], 'experience': [], 'skills': [], 'achievements': [], 'additional_info': ''}, 'resume_type': 'targeted'}
-2025-04-16 11:23:04,830 - __main__ - INFO - Generating resume with type: targeted
-2025-04-16 11:23:04,980 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-16 11:23:08,419 - __main__ - INFO - Resume generated successfully
-2025-04-16 11:23:08,420 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 11:23:08] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-16 11:29:26,034 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-16 11:29:26,041 - __main__ - INFO - Received data: {'user_data': {'name': '', 'target_position': '', 'contacts': '', 'about': '', 'education': [], 'experience': [], 'skills': [], 'achievements': [], 'additional_info': ''}, 'resume_type': 'standard'}
-2025-04-16 11:29:26,041 - __main__ - INFO - Generating resume with type: standard
-2025-04-16 11:29:26,246 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-16 11:29:30,764 - __main__ - INFO - Resume generated successfully
-2025-04-16 11:29:30,764 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 11:29:30] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-16 11:29:32,928 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 11:29:32] "[33mPOST /api/download-resume HTTP/1.1[0m" 404 -
-2025-04-16 11:29:33,569 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 11:29:33] "[33mPOST /api/download-resume HTTP/1.1[0m" 404 -
-2025-04-16 11:29:35,144 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 11:29:35] "[33mPOST /api/download-resume HTTP/1.1[0m" 404 -
-2025-04-16 11:29:35,534 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 11:29:35] "[33mPOST /api/download-resume HTTP/1.1[0m" 404 -
-2025-04-16 11:29:35,706 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 11:29:35] "[33mPOST /api/download-resume HTTP/1.1[0m" 404 -
-2025-04-16 11:29:35,898 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 11:29:35] "[33mPOST /api/download-resume HTTP/1.1[0m" 404 -
-2025-04-16 11:29:37,612 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 11:29:37] "[33mPOST /api/download-resume HTTP/1.1[0m" 404 -
-2025-04-16 11:30:03,308 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-16 11:30:03,312 - __main__ - INFO - Received data: {'user_data': {'name': '', 'target_position': '', 'contacts': '', 'about': '', 'education': [], 'experience': [], 'skills': [], 'achievements': [], 'additional_info': ''}, 'resume_type': 'standard'}
-2025-04-16 11:30:03,312 - __main__ - INFO - Generating resume with type: standard
-2025-04-16 11:30:03,495 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-16 11:30:07,717 - __main__ - INFO - Resume generated successfully
-2025-04-16 11:30:07,720 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 11:30:07] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-16 11:30:24,037 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 11:30:24] "[33mPOST /api/download-resume HTTP/1.1[0m" 404 -
-2025-04-16 11:30:24,605 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 11:30:24] "[33mPOST /api/download-resume HTTP/1.1[0m" 404 -
-2025-04-16 11:30:27,563 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 11:30:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-04-16 11:30:27,565 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 11:30:27] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
-2025-04-16 11:30:27,565 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 11:30:27] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
-2025-04-16 11:30:33,433 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-16 11:30:33,435 - __main__ - INFO - Received data: {'user_data': {'name': '', 'target_position': '', 'contacts': '', 'about': '', 'education': [], 'experience': [], 'skills': [], 'achievements': [], 'additional_info': ''}, 'resume_type': 'standard'}
-2025-04-16 11:30:33,435 - __main__ - INFO - Generating resume with type: standard
-2025-04-16 11:30:33,636 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-16 11:30:38,902 - __main__ - INFO - Resume generated successfully
-2025-04-16 11:30:38,904 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 11:30:38] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-16 11:58:00,365 - werkzeug - INFO -  * Detected change in '/Users/stepanfrolov/Documents/PSUTI/Магистратура/AI-powered_resume_generator/backend/app.py', reloading
-2025-04-16 11:58:00,543 - werkzeug - INFO -  * Restarting with stat
-2025-04-16 12:08:06,625 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.0.10:5000
-2025-04-16 12:08:06,626 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2025-04-16 12:08:17,788 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-16 12:08:17,790 - __main__ - INFO - Received data for resume generation
-2025-04-16 12:08:17,791 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:08:17] "[31m[1mPOST /api/generate-resume HTTP/1.1[0m" 400 -
-2025-04-16 12:08:25,990 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-16 12:08:25,995 - __main__ - INFO - Received data for resume generation
-2025-04-16 12:08:25,995 - __main__ - INFO - Generating standard resume
-2025-04-16 12:08:26,287 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-16 12:08:30,292 - __main__ - INFO - Resume generated successfully
-2025-04-16 12:08:30,295 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:08:30] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-16 12:08:32,797 - __main__ - INFO - Received request to /api/download-resume
-2025-04-16 12:08:32,828 - __main__ - ERROR - Error generating download file: No wkhtmltopdf executable found: "b''"
-If this file exists please check that this process can read it or you can pass path to it manually in method call, check README. Otherwise please install wkhtmltopdf - https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf
-Traceback (most recent call last):
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/configuration.py", line 35, in __init__
-    with open(self.wkhtmltopdf) as f:
-         ~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: b''
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/stepanfrolov/Documents/PSUTI/Магистратура/AI-powered_resume_generator/backend/app.py", line 145, in download_resume
-    pdfkit.from_string(html_content, temp_path, options=PDFKIT_CONFIG)
-    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/api.py", line 72, in from_string
-    r = PDFKit(input, 'string', options=options, toc=toc, cover=cover, css=css,
-               configuration=configuration, cover_first=cover_first, verbose=verbose)
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/pdfkit.py", line 45, in __init__
-    self.configuration = (Configuration() if configuration is None
-                          ~~~~~~~~~~~~~^^
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/configuration.py", line 38, in __init__
-    raise IOError('No wkhtmltopdf executable found: "%s"\n'
-    ...<3 lines>...
-                  'https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf' % self.wkhtmltopdf)
-OSError: No wkhtmltopdf executable found: "b''"
-If this file exists please check that this process can read it or you can pass path to it manually in method call, check README. Otherwise please install wkhtmltopdf - https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf
-2025-04-16 12:08:32,835 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:08:32] "[35m[1mPOST /api/download-resume HTTP/1.1[0m" 500 -
-2025-04-16 12:08:33,569 - __main__ - INFO - Received request to /api/download-resume
-2025-04-16 12:08:33,616 - __main__ - INFO - File generated successfully: /var/folders/gf/yw7m6ypx0xb5dj2lr2xjt9ch0000gn/T/tmpj5a22k3z.docx
-2025-04-16 12:08:33,617 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:08:33] "POST /api/download-resume HTTP/1.1" 200 -
-2025-04-16 12:08:33,759 - __main__ - INFO - Received request to /api/download-resume
-2025-04-16 12:08:33,786 - __main__ - INFO - File generated successfully: /var/folders/gf/yw7m6ypx0xb5dj2lr2xjt9ch0000gn/T/tmpnm56l2_3.docx
-2025-04-16 12:08:33,787 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:08:33] "POST /api/download-resume HTTP/1.1" 200 -
-2025-04-16 12:08:33,973 - __main__ - INFO - Received request to /api/download-resume
-2025-04-16 12:08:34,012 - __main__ - INFO - File generated successfully: /var/folders/gf/yw7m6ypx0xb5dj2lr2xjt9ch0000gn/T/tmpi_x6ihed.docx
-2025-04-16 12:08:34,012 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:08:34] "POST /api/download-resume HTTP/1.1" 200 -
-2025-04-16 12:08:35,979 - __main__ - INFO - Received request to /api/download-resume
-2025-04-16 12:08:35,995 - __main__ - ERROR - Error generating download file: No wkhtmltopdf executable found: "b''"
-If this file exists please check that this process can read it or you can pass path to it manually in method call, check README. Otherwise please install wkhtmltopdf - https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf
-Traceback (most recent call last):
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/configuration.py", line 35, in __init__
-    with open(self.wkhtmltopdf) as f:
-         ~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: b''
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/stepanfrolov/Documents/PSUTI/Магистратура/AI-powered_resume_generator/backend/app.py", line 145, in download_resume
-    pdfkit.from_string(html_content, temp_path, options=PDFKIT_CONFIG)
-    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/api.py", line 72, in from_string
-    r = PDFKit(input, 'string', options=options, toc=toc, cover=cover, css=css,
-               configuration=configuration, cover_first=cover_first, verbose=verbose)
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/pdfkit.py", line 45, in __init__
-    self.configuration = (Configuration() if configuration is None
-                          ~~~~~~~~~~~~~^^
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/configuration.py", line 38, in __init__
-    raise IOError('No wkhtmltopdf executable found: "%s"\n'
-    ...<3 lines>...
-                  'https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf' % self.wkhtmltopdf)
-OSError: No wkhtmltopdf executable found: "b''"
-If this file exists please check that this process can read it or you can pass path to it manually in method call, check README. Otherwise please install wkhtmltopdf - https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf
-2025-04-16 12:08:35,999 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:08:35] "[35m[1mPOST /api/download-resume HTTP/1.1[0m" 500 -
-2025-04-16 12:08:36,679 - __main__ - INFO - Received request to /api/download-resume
-2025-04-16 12:08:36,698 - __main__ - ERROR - Error generating download file: No wkhtmltopdf executable found: "b''"
-If this file exists please check that this process can read it or you can pass path to it manually in method call, check README. Otherwise please install wkhtmltopdf - https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf
-Traceback (most recent call last):
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/configuration.py", line 35, in __init__
-    with open(self.wkhtmltopdf) as f:
-         ~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: b''
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/stepanfrolov/Documents/PSUTI/Магистратура/AI-powered_resume_generator/backend/app.py", line 145, in download_resume
-    pdfkit.from_string(html_content, temp_path, options=PDFKIT_CONFIG)
-    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/api.py", line 72, in from_string
-    r = PDFKit(input, 'string', options=options, toc=toc, cover=cover, css=css,
-               configuration=configuration, cover_first=cover_first, verbose=verbose)
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/pdfkit.py", line 45, in __init__
-    self.configuration = (Configuration() if configuration is None
-                          ~~~~~~~~~~~~~^^
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/configuration.py", line 38, in __init__
-    raise IOError('No wkhtmltopdf executable found: "%s"\n'
-    ...<3 lines>...
-                  'https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf' % self.wkhtmltopdf)
-OSError: No wkhtmltopdf executable found: "b''"
-If this file exists please check that this process can read it or you can pass path to it manually in method call, check README. Otherwise please install wkhtmltopdf - https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf
-2025-04-16 12:08:36,701 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:08:36] "[35m[1mPOST /api/download-resume HTTP/1.1[0m" 500 -
-2025-04-16 12:08:36,862 - __main__ - INFO - Received request to /api/download-resume
-2025-04-16 12:08:36,879 - __main__ - ERROR - Error generating download file: No wkhtmltopdf executable found: "b''"
-If this file exists please check that this process can read it or you can pass path to it manually in method call, check README. Otherwise please install wkhtmltopdf - https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf
-Traceback (most recent call last):
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/configuration.py", line 35, in __init__
-    with open(self.wkhtmltopdf) as f:
-         ~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: b''
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/stepanfrolov/Documents/PSUTI/Магистратура/AI-powered_resume_generator/backend/app.py", line 145, in download_resume
-    pdfkit.from_string(html_content, temp_path, options=PDFKIT_CONFIG)
-    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/api.py", line 72, in from_string
-    r = PDFKit(input, 'string', options=options, toc=toc, cover=cover, css=css,
-               configuration=configuration, cover_first=cover_first, verbose=verbose)
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/pdfkit.py", line 45, in __init__
-    self.configuration = (Configuration() if configuration is None
-                          ~~~~~~~~~~~~~^^
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/configuration.py", line 38, in __init__
-    raise IOError('No wkhtmltopdf executable found: "%s"\n'
-    ...<3 lines>...
-                  'https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf' % self.wkhtmltopdf)
-OSError: No wkhtmltopdf executable found: "b''"
-If this file exists please check that this process can read it or you can pass path to it manually in method call, check README. Otherwise please install wkhtmltopdf - https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf
-2025-04-16 12:08:36,900 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:08:36] "[35m[1mPOST /api/download-resume HTTP/1.1[0m" 500 -
-2025-04-16 12:08:37,015 - __main__ - INFO - Received request to /api/download-resume
-2025-04-16 12:08:37,042 - __main__ - ERROR - Error generating download file: No wkhtmltopdf executable found: "b''"
-If this file exists please check that this process can read it or you can pass path to it manually in method call, check README. Otherwise please install wkhtmltopdf - https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf
-Traceback (most recent call last):
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/configuration.py", line 35, in __init__
-    with open(self.wkhtmltopdf) as f:
-         ~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: b''
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/stepanfrolov/Documents/PSUTI/Магистратура/AI-powered_resume_generator/backend/app.py", line 145, in download_resume
-    pdfkit.from_string(html_content, temp_path, options=PDFKIT_CONFIG)
-    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/api.py", line 72, in from_string
-    r = PDFKit(input, 'string', options=options, toc=toc, cover=cover, css=css,
-               configuration=configuration, cover_first=cover_first, verbose=verbose)
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/pdfkit.py", line 45, in __init__
-    self.configuration = (Configuration() if configuration is None
-                          ~~~~~~~~~~~~~^^
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/configuration.py", line 38, in __init__
-    raise IOError('No wkhtmltopdf executable found: "%s"\n'
-    ...<3 lines>...
-                  'https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf' % self.wkhtmltopdf)
-OSError: No wkhtmltopdf executable found: "b''"
-If this file exists please check that this process can read it or you can pass path to it manually in method call, check README. Otherwise please install wkhtmltopdf - https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf
-2025-04-16 12:08:37,044 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:08:37] "[35m[1mPOST /api/download-resume HTTP/1.1[0m" 500 -
-2025-04-16 12:08:37,174 - __main__ - INFO - Received request to /api/download-resume
-2025-04-16 12:08:37,187 - __main__ - ERROR - Error generating download file: No wkhtmltopdf executable found: "b''"
-If this file exists please check that this process can read it or you can pass path to it manually in method call, check README. Otherwise please install wkhtmltopdf - https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf
-Traceback (most recent call last):
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/configuration.py", line 35, in __init__
-    with open(self.wkhtmltopdf) as f:
-         ~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: b''
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/stepanfrolov/Documents/PSUTI/Магистратура/AI-powered_resume_generator/backend/app.py", line 145, in download_resume
-    pdfkit.from_string(html_content, temp_path, options=PDFKIT_CONFIG)
-    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/api.py", line 72, in from_string
-    r = PDFKit(input, 'string', options=options, toc=toc, cover=cover, css=css,
-               configuration=configuration, cover_first=cover_first, verbose=verbose)
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/pdfkit.py", line 45, in __init__
-    self.configuration = (Configuration() if configuration is None
-                          ~~~~~~~~~~~~~^^
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/configuration.py", line 38, in __init__
-    raise IOError('No wkhtmltopdf executable found: "%s"\n'
-    ...<3 lines>...
-                  'https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf' % self.wkhtmltopdf)
-OSError: No wkhtmltopdf executable found: "b''"
-If this file exists please check that this process can read it or you can pass path to it manually in method call, check README. Otherwise please install wkhtmltopdf - https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf
-2025-04-16 12:08:37,189 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:08:37] "[35m[1mPOST /api/download-resume HTTP/1.1[0m" 500 -
-2025-04-16 12:08:37,382 - __main__ - INFO - Received request to /api/download-resume
-2025-04-16 12:08:37,394 - __main__ - ERROR - Error generating download file: No wkhtmltopdf executable found: "b''"
-If this file exists please check that this process can read it or you can pass path to it manually in method call, check README. Otherwise please install wkhtmltopdf - https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf
-Traceback (most recent call last):
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/configuration.py", line 35, in __init__
-    with open(self.wkhtmltopdf) as f:
-         ~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: b''
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/stepanfrolov/Documents/PSUTI/Магистратура/AI-powered_resume_generator/backend/app.py", line 145, in download_resume
-    pdfkit.from_string(html_content, temp_path, options=PDFKIT_CONFIG)
-    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/api.py", line 72, in from_string
-    r = PDFKit(input, 'string', options=options, toc=toc, cover=cover, css=css,
-               configuration=configuration, cover_first=cover_first, verbose=verbose)
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/pdfkit.py", line 45, in __init__
-    self.configuration = (Configuration() if configuration is None
-                          ~~~~~~~~~~~~~^^
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/configuration.py", line 38, in __init__
-    raise IOError('No wkhtmltopdf executable found: "%s"\n'
-    ...<3 lines>...
-                  'https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf' % self.wkhtmltopdf)
-OSError: No wkhtmltopdf executable found: "b''"
-If this file exists please check that this process can read it or you can pass path to it manually in method call, check README. Otherwise please install wkhtmltopdf - https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf
-2025-04-16 12:08:37,397 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:08:37] "[35m[1mPOST /api/download-resume HTTP/1.1[0m" 500 -
-2025-04-16 12:08:38,636 - __main__ - INFO - Received request to /api/download-resume
-2025-04-16 12:08:38,661 - __main__ - ERROR - Error generating download file: No wkhtmltopdf executable found: "b''"
-If this file exists please check that this process can read it or you can pass path to it manually in method call, check README. Otherwise please install wkhtmltopdf - https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf
-Traceback (most recent call last):
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/configuration.py", line 35, in __init__
-    with open(self.wkhtmltopdf) as f:
-         ~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: b''
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/stepanfrolov/Documents/PSUTI/Магистратура/AI-powered_resume_generator/backend/app.py", line 145, in download_resume
-    pdfkit.from_string(html_content, temp_path, options=PDFKIT_CONFIG)
-    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/api.py", line 72, in from_string
-    r = PDFKit(input, 'string', options=options, toc=toc, cover=cover, css=css,
-               configuration=configuration, cover_first=cover_first, verbose=verbose)
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/pdfkit.py", line 45, in __init__
-    self.configuration = (Configuration() if configuration is None
-                          ~~~~~~~~~~~~~^^
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/configuration.py", line 38, in __init__
-    raise IOError('No wkhtmltopdf executable found: "%s"\n'
-    ...<3 lines>...
-                  'https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf' % self.wkhtmltopdf)
-OSError: No wkhtmltopdf executable found: "b''"
-If this file exists please check that this process can read it or you can pass path to it manually in method call, check README. Otherwise please install wkhtmltopdf - https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf
-2025-04-16 12:08:38,664 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:08:38] "[35m[1mPOST /api/download-resume HTTP/1.1[0m" 500 -
-2025-04-16 12:08:38,790 - __main__ - INFO - Received request to /api/download-resume
-2025-04-16 12:08:38,804 - __main__ - ERROR - Error generating download file: No wkhtmltopdf executable found: "b''"
-If this file exists please check that this process can read it or you can pass path to it manually in method call, check README. Otherwise please install wkhtmltopdf - https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf
-Traceback (most recent call last):
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/configuration.py", line 35, in __init__
-    with open(self.wkhtmltopdf) as f:
-         ~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: b''
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/stepanfrolov/Documents/PSUTI/Магистратура/AI-powered_resume_generator/backend/app.py", line 145, in download_resume
-    pdfkit.from_string(html_content, temp_path, options=PDFKIT_CONFIG)
-    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/api.py", line 72, in from_string
-    r = PDFKit(input, 'string', options=options, toc=toc, cover=cover, css=css,
-               configuration=configuration, cover_first=cover_first, verbose=verbose)
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/pdfkit.py", line 45, in __init__
-    self.configuration = (Configuration() if configuration is None
-                          ~~~~~~~~~~~~~^^
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/configuration.py", line 38, in __init__
-    raise IOError('No wkhtmltopdf executable found: "%s"\n'
-    ...<3 lines>...
-                  'https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf' % self.wkhtmltopdf)
-OSError: No wkhtmltopdf executable found: "b''"
-If this file exists please check that this process can read it or you can pass path to it manually in method call, check README. Otherwise please install wkhtmltopdf - https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf
-2025-04-16 12:08:38,807 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:08:38] "[35m[1mPOST /api/download-resume HTTP/1.1[0m" 500 -
-2025-04-16 12:08:39,555 - __main__ - INFO - Received request to /api/download-resume
-2025-04-16 12:08:39,588 - __main__ - INFO - File generated successfully: /var/folders/gf/yw7m6ypx0xb5dj2lr2xjt9ch0000gn/T/tmpcccnckyy.docx
-2025-04-16 12:08:39,589 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:08:39] "POST /api/download-resume HTTP/1.1" 200 -
-2025-04-16 12:09:02,634 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:09:02] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
-2025-04-16 12:09:02,635 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:09:02] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
-2025-04-16 12:09:02,635 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:09:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-04-16 12:09:15,903 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-16 12:09:15,904 - __main__ - INFO - Received data for resume generation
-2025-04-16 12:09:15,905 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:09:15] "[31m[1mPOST /api/generate-resume HTTP/1.1[0m" 400 -
-2025-04-16 12:09:21,534 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-16 12:09:21,536 - __main__ - INFO - Received data for resume generation
-2025-04-16 12:09:21,536 - __main__ - INFO - Generating standard resume
-2025-04-16 12:09:21,714 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-16 12:09:24,627 - __main__ - INFO - Resume generated successfully
-2025-04-16 12:09:24,630 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:09:24] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-16 12:09:26,237 - __main__ - INFO - Received request to /api/download-resume
-2025-04-16 12:09:26,271 - __main__ - ERROR - Error generating download file: No wkhtmltopdf executable found: "b''"
-If this file exists please check that this process can read it or you can pass path to it manually in method call, check README. Otherwise please install wkhtmltopdf - https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf
-Traceback (most recent call last):
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/configuration.py", line 35, in __init__
-    with open(self.wkhtmltopdf) as f:
-         ~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: b''
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/stepanfrolov/Documents/PSUTI/Магистратура/AI-powered_resume_generator/backend/app.py", line 145, in download_resume
-    pdfkit.from_string(html_content, temp_path, options=PDFKIT_CONFIG)
-    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/api.py", line 72, in from_string
-    r = PDFKit(input, 'string', options=options, toc=toc, cover=cover, css=css,
-               configuration=configuration, cover_first=cover_first, verbose=verbose)
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/pdfkit.py", line 45, in __init__
-    self.configuration = (Configuration() if configuration is None
-                          ~~~~~~~~~~~~~^^
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/configuration.py", line 38, in __init__
-    raise IOError('No wkhtmltopdf executable found: "%s"\n'
-    ...<3 lines>...
-                  'https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf' % self.wkhtmltopdf)
-OSError: No wkhtmltopdf executable found: "b''"
-If this file exists please check that this process can read it or you can pass path to it manually in method call, check README. Otherwise please install wkhtmltopdf - https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf
-2025-04-16 12:09:26,277 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:09:26] "[35m[1mPOST /api/download-resume HTTP/1.1[0m" 500 -
-2025-04-16 12:09:27,007 - __main__ - INFO - Received request to /api/download-resume
-2025-04-16 12:09:27,023 - __main__ - ERROR - Error generating download file: No wkhtmltopdf executable found: "b''"
-If this file exists please check that this process can read it or you can pass path to it manually in method call, check README. Otherwise please install wkhtmltopdf - https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf
-Traceback (most recent call last):
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/configuration.py", line 35, in __init__
-    with open(self.wkhtmltopdf) as f:
-         ~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: b''
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/stepanfrolov/Documents/PSUTI/Магистратура/AI-powered_resume_generator/backend/app.py", line 145, in download_resume
-    pdfkit.from_string(html_content, temp_path, options=PDFKIT_CONFIG)
-    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/api.py", line 72, in from_string
-    r = PDFKit(input, 'string', options=options, toc=toc, cover=cover, css=css,
-               configuration=configuration, cover_first=cover_first, verbose=verbose)
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/pdfkit.py", line 45, in __init__
-    self.configuration = (Configuration() if configuration is None
-                          ~~~~~~~~~~~~~^^
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/configuration.py", line 38, in __init__
-    raise IOError('No wkhtmltopdf executable found: "%s"\n'
-    ...<3 lines>...
-                  'https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf' % self.wkhtmltopdf)
-OSError: No wkhtmltopdf executable found: "b''"
-If this file exists please check that this process can read it or you can pass path to it manually in method call, check README. Otherwise please install wkhtmltopdf - https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf
-2025-04-16 12:09:27,026 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:09:27] "[35m[1mPOST /api/download-resume HTTP/1.1[0m" 500 -
-2025-04-16 12:09:39,764 - __main__ - INFO - Received request to /api/download-resume
-2025-04-16 12:09:39,775 - __main__ - ERROR - Error generating download file: No wkhtmltopdf executable found: "b''"
-If this file exists please check that this process can read it or you can pass path to it manually in method call, check README. Otherwise please install wkhtmltopdf - https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf
-Traceback (most recent call last):
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/configuration.py", line 35, in __init__
-    with open(self.wkhtmltopdf) as f:
-         ~~~~^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: b''
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/stepanfrolov/Documents/PSUTI/Магистратура/AI-powered_resume_generator/backend/app.py", line 145, in download_resume
-    pdfkit.from_string(html_content, temp_path, options=PDFKIT_CONFIG)
-    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/api.py", line 72, in from_string
-    r = PDFKit(input, 'string', options=options, toc=toc, cover=cover, css=css,
-               configuration=configuration, cover_first=cover_first, verbose=verbose)
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/pdfkit.py", line 45, in __init__
-    self.configuration = (Configuration() if configuration is None
-                          ~~~~~~~~~~~~~^^
-  File "/Users/stepanfrolov/Library/Python/3.13/lib/python/site-packages/pdfkit/configuration.py", line 38, in __init__
-    raise IOError('No wkhtmltopdf executable found: "%s"\n'
-    ...<3 lines>...
-                  'https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf' % self.wkhtmltopdf)
-OSError: No wkhtmltopdf executable found: "b''"
-If this file exists please check that this process can read it or you can pass path to it manually in method call, check README. Otherwise please install wkhtmltopdf - https://github.com/JazzCore/python-pdfkit/wiki/Installing-wkhtmltopdf
-2025-04-16 12:09:39,778 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:09:39] "[35m[1mPOST /api/download-resume HTTP/1.1[0m" 500 -
-2025-04-16 12:12:24,410 - __main__ - INFO - Received request to /api/download-resume
-2025-04-16 12:12:29,835 - __main__ - INFO - File generated successfully: /var/folders/gf/yw7m6ypx0xb5dj2lr2xjt9ch0000gn/T/tmpnjb2sy0g.pdf
-2025-04-16 12:12:29,838 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:12:29] "POST /api/download-resume HTTP/1.1" 200 -
-2025-04-16 12:18:23,266 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-16 12:18:23,268 - __main__ - INFO - Received data for resume generation
-2025-04-16 12:18:23,268 - __main__ - INFO - Generating it resume
-2025-04-16 12:18:23,495 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-16 12:18:26,536 - __main__ - INFO - Resume generated successfully
-2025-04-16 12:18:26,540 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:18:26] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-16 12:18:35,161 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-16 12:18:35,163 - __main__ - INFO - Received data for resume generation
-2025-04-16 12:18:35,164 - __main__ - INFO - Generating creative resume
-2025-04-16 12:18:35,353 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-16 12:18:39,084 - __main__ - INFO - Resume generated successfully
-2025-04-16 12:18:39,086 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:18:39] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-16 12:32:20,548 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-16 12:32:20,553 - __main__ - INFO - Received data for resume generation
-2025-04-16 12:32:20,561 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:32:20] "[31m[1mPOST /api/generate-resume HTTP/1.1[0m" 400 -
-2025-04-16 12:32:32,956 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-16 12:32:32,958 - __main__ - INFO - Received data for resume generation
-2025-04-16 12:32:32,958 - __main__ - INFO - Generating creative resume
-2025-04-16 12:32:33,199 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-16 12:32:36,875 - __main__ - INFO - Resume generated successfully
-2025-04-16 12:32:36,878 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:32:36] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-16 12:32:41,361 - __main__ - INFO - Received request to /api/download-resume
-2025-04-16 12:32:41,430 - __main__ - INFO - File generated successfully: /var/folders/gf/yw7m6ypx0xb5dj2lr2xjt9ch0000gn/T/tmpab3eh1kz.docx
-2025-04-16 12:32:41,435 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:32:41] "POST /api/download-resume HTTP/1.1" 200 -
-2025-04-16 12:32:44,314 - __main__ - INFO - Received request to /api/download-resume
-2025-04-16 12:32:46,671 - __main__ - INFO - File generated successfully: /var/folders/gf/yw7m6ypx0xb5dj2lr2xjt9ch0000gn/T/tmpz9le4k5t.pdf
-2025-04-16 12:32:46,673 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:32:46] "POST /api/download-resume HTTP/1.1" 200 -
-2025-04-16 12:33:28,589 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-16 12:33:28,590 - __main__ - INFO - Received data for resume generation
-2025-04-16 12:33:28,590 - __main__ - INFO - Generating it resume
-2025-04-16 12:33:28,787 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-16 12:33:31,845 - __main__ - INFO - Resume generated successfully
-2025-04-16 12:33:31,847 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 12:33:31] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-16 13:36:52,172 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-16 13:36:52,180 - __main__ - INFO - Received data for resume generation
-2025-04-16 13:36:52,187 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:36:52] "[31m[1mPOST /api/generate-resume HTTP/1.1[0m" 400 -
-2025-04-16 13:37:17,052 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-16 13:37:17,056 - __main__ - INFO - Received data for resume generation
-2025-04-16 13:37:17,056 - __main__ - INFO - Generating creative resume
-2025-04-16 13:37:17,355 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-16 13:37:21,334 - __main__ - INFO - Resume generated successfully
-2025-04-16 13:37:21,338 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:37:21] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-16 13:39:17,466 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-16 13:39:17,469 - __main__ - INFO - Received data for resume generation
-2025-04-16 13:39:17,469 - __main__ - INFO - Generating creative resume
-2025-04-16 13:39:17,675 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-16 13:39:22,016 - __main__ - INFO - Resume generated successfully
-2025-04-16 13:39:22,019 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:39:22] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-16 13:39:50,159 - __main__ - INFO - Received request to /api/download-resume
-2025-04-16 13:39:50,226 - __main__ - INFO - File generated successfully: /var/folders/gf/yw7m6ypx0xb5dj2lr2xjt9ch0000gn/T/tmpe160zvok.docx
-2025-04-16 13:39:50,229 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:39:50] "POST /api/download-resume HTTP/1.1" 200 -
-2025-04-16 13:39:51,502 - __main__ - INFO - Received request to /api/download-resume
-2025-04-16 13:39:54,028 - __main__ - INFO - File generated successfully: /var/folders/gf/yw7m6ypx0xb5dj2lr2xjt9ch0000gn/T/tmpdvra7hj1.pdf
-2025-04-16 13:39:54,031 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:39:54] "POST /api/download-resume HTTP/1.1" 200 -
-2025-04-16 13:39:56,995 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:39:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-04-16 13:39:56,996 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:39:56] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
-2025-04-16 13:39:56,996 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:39:56] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
-2025-04-16 13:42:37,036 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-16 13:42:37,038 - __main__ - INFO - Received data for resume generation
-2025-04-16 13:42:37,038 - __main__ - INFO - Generating standard resume
-2025-04-16 13:42:37,256 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-16 13:42:40,859 - __main__ - INFO - Resume generated successfully
-2025-04-16 13:42:40,862 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:42:40] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-17 13:22:25,276 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:22:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-04-17 13:22:36,705 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:22:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-04-17 13:22:45,416 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-17 13:22:45,421 - __main__ - INFO - Received data for resume generation
-2025-04-17 13:22:45,425 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:22:45] "[31m[1mPOST /api/generate-resume HTTP/1.1[0m" 400 -
-2025-04-17 13:22:51,822 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:22:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-04-17 13:37:25,882 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-17 13:37:25,887 - __main__ - INFO - Received data for resume generation
-2025-04-17 13:37:25,887 - __main__ - INFO - Generating standard resume
-2025-04-17 13:37:26,200 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-17 13:37:28,665 - __main__ - INFO - Resume generated successfully
-2025-04-17 13:37:28,668 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:37:28] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-17 13:37:40,489 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-17 13:37:40,492 - __main__ - INFO - Received data for resume generation
-2025-04-17 13:37:40,492 - __main__ - INFO - Generating it resume
-2025-04-17 13:37:40,680 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-17 13:37:43,640 - __main__ - INFO - Resume generated successfully
-2025-04-17 13:37:43,643 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:37:43] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-17 13:37:54,446 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-17 13:37:54,448 - __main__ - INFO - Received data for resume generation
-2025-04-17 13:37:54,448 - __main__ - INFO - Generating it resume
-2025-04-17 13:37:54,650 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-17 13:37:57,978 - __main__ - INFO - Resume generated successfully
-2025-04-17 13:37:57,981 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:37:57] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-17 13:57:08,944 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-17 13:57:08,950 - __main__ - INFO - Received data for resume generation
-2025-04-17 13:57:08,958 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:57:08] "[31m[1mPOST /api/generate-resume HTTP/1.1[0m" 400 -
-2025-04-17 13:57:45,023 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-17 13:57:45,025 - __main__ - INFO - Received data for resume generation
-2025-04-17 13:57:45,027 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:57:45] "[31m[1mPOST /api/generate-resume HTTP/1.1[0m" 400 -
-2025-04-17 13:58:07,020 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-17 13:58:07,023 - __main__ - INFO - Received data for resume generation
-2025-04-17 13:58:07,024 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:58:07] "[31m[1mPOST /api/generate-resume HTTP/1.1[0m" 400 -
-2025-04-17 13:58:27,542 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-17 13:58:27,545 - __main__ - INFO - Received data for resume generation
-2025-04-17 13:58:27,545 - __main__ - INFO - Generating standard resume
-2025-04-17 13:58:27,825 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-17 13:58:31,690 - __main__ - INFO - Resume generated successfully
-2025-04-17 13:58:31,694 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:58:31] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-17 13:58:33,742 - __main__ - INFO - Received request to /api/download-resume
-2025-04-17 13:58:33,815 - __main__ - INFO - File generated successfully: /var/folders/gf/yw7m6ypx0xb5dj2lr2xjt9ch0000gn/T/tmp8px9pa_r.docx
-2025-04-17 13:58:33,820 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:58:33] "POST /api/download-resume HTTP/1.1" 200 -
-2025-04-17 13:58:35,545 - __main__ - INFO - Received request to /api/download-resume
-2025-04-17 13:58:38,032 - __main__ - INFO - File generated successfully: /var/folders/gf/yw7m6ypx0xb5dj2lr2xjt9ch0000gn/T/tmp_i0ado_1.pdf
-2025-04-17 13:58:38,034 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 13:58:38] "POST /api/download-resume HTTP/1.1" 200 -
-2025-04-17 14:03:46,772 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-17 14:03:46,774 - __main__ - INFO - Received data for resume generation
-2025-04-17 14:03:46,775 - __main__ - INFO - Generating standard resume
-2025-04-17 14:03:47,076 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-17 14:03:49,731 - __main__ - INFO - Resume generated successfully
-2025-04-17 14:03:49,733 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:03:49] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-17 14:03:51,037 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-17 14:03:51,037 - __main__ - INFO - Received data for resume generation
-2025-04-17 14:03:51,037 - __main__ - INFO - Generating standard resume
-2025-04-17 14:03:51,224 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-17 14:03:54,969 - __main__ - INFO - Resume generated successfully
-2025-04-17 14:03:54,971 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:03:54] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-17 14:03:56,230 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-17 14:03:56,230 - __main__ - INFO - Received data for resume generation
-2025-04-17 14:03:56,230 - __main__ - INFO - Generating standard resume
-2025-04-17 14:03:56,442 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-17 14:03:58,787 - __main__ - INFO - Resume generated successfully
-2025-04-17 14:03:58,789 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:03:58] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-17 14:08:32,893 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-17 14:08:32,899 - __main__ - INFO - Received data for resume generation
-2025-04-17 14:08:32,900 - __main__ - INFO - Generating standard resume
-2025-04-17 14:08:33,120 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-17 14:08:36,386 - __main__ - INFO - Resume generated successfully
-2025-04-17 14:08:36,389 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:08:36] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-17 14:08:39,310 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-17 14:08:39,312 - __main__ - INFO - Received data for resume generation
-2025-04-17 14:08:39,312 - __main__ - INFO - Generating standard resume
-2025-04-17 14:08:39,483 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-17 14:08:42,241 - __main__ - INFO - Resume generated successfully
-2025-04-17 14:08:42,243 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:08:42] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-17 14:56:57,902 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:56:57] "[33mGET /templates/classic.png HTTP/1.1[0m" 404 -
-2025-04-17 14:56:57,906 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:56:57] "[33mGET /templates/modern.png HTTP/1.1[0m" 404 -
-2025-04-17 14:56:57,911 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:56:57] "[33mGET /templates/creative.png HTTP/1.1[0m" 404 -
-2025-04-17 14:56:58,006 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:56:58] "[33mGET /templates/academic.png HTTP/1.1[0m" 404 -
-2025-04-17 14:56:59,433 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:56:59] "[33mGET /templates/modern.png HTTP/1.1[0m" 404 -
-2025-04-17 14:56:59,435 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:56:59] "[33mGET /templates/classic.png HTTP/1.1[0m" 404 -
-2025-04-17 14:56:59,435 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:56:59] "[33mGET /templates/creative.png HTTP/1.1[0m" 404 -
-2025-04-17 14:56:59,436 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:56:59] "[33mGET /templates/academic.png HTTP/1.1[0m" 404 -
-2025-04-17 14:58:15,654 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-17 14:58:15,658 - __main__ - INFO - Received data for resume generation
-2025-04-17 14:58:15,660 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:58:15] "[31m[1mPOST /api/generate-resume HTTP/1.1[0m" 400 -
-2025-04-17 14:58:29,210 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-17 14:58:29,212 - __main__ - INFO - Received data for resume generation
-2025-04-17 14:58:29,212 - __main__ - INFO - Generating standard resume
-2025-04-17 14:58:29,481 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-17 14:58:33,378 - __main__ - INFO - Resume generated successfully
-2025-04-17 14:58:33,382 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:58:33] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-17 14:58:46,932 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:58:46] "[33mPOST /api/ats-check HTTP/1.1[0m" 404 -
-2025-04-17 14:58:52,549 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:58:52] "[33mGET /api/vacancies?position=Frontend%20Developer&lang=ru HTTP/1.1[0m" 404 -
-2025-04-17 14:58:57,395 - __main__ - INFO - Received request to /api/download-resume
-2025-04-17 14:58:59,811 - __main__ - INFO - File generated successfully: /var/folders/gf/yw7m6ypx0xb5dj2lr2xjt9ch0000gn/T/tmp04yxxdv3.pdf
-2025-04-17 14:58:59,817 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:58:59] "POST /api/download-resume HTTP/1.1" 200 -
-2025-04-17 14:59:00,591 - __main__ - INFO - Received request to /api/download-resume
-2025-04-17 14:59:00,646 - __main__ - INFO - File generated successfully: /var/folders/gf/yw7m6ypx0xb5dj2lr2xjt9ch0000gn/T/tmpr_x1x4j0.docx
-2025-04-17 14:59:00,647 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:59:00] "POST /api/download-resume HTTP/1.1" 200 -
-2025-04-17 14:59:36,289 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:59:36] "[33mPOST /api/ats-check HTTP/1.1[0m" 404 -
-2025-04-17 14:59:40,537 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:59:40] "[33mPOST /api/export HTTP/1.1[0m" 404 -
-2025-04-17 14:59:46,462 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:59:46] "[33mGET /templates/modern.png HTTP/1.1[0m" 404 -
-2025-04-17 14:59:46,463 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:59:46] "[33mGET /templates/classic.png HTTP/1.1[0m" 404 -
-2025-04-17 14:59:46,463 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:59:46] "[33mGET /templates/creative.png HTTP/1.1[0m" 404 -
-2025-04-17 14:59:46,464 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 14:59:46] "[33mGET /templates/academic.png HTTP/1.1[0m" 404 -
-2025-04-17 15:08:03,610 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-17 15:08:03,614 - __main__ - INFO - Received data for resume generation
-2025-04-17 15:08:03,616 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:08:03] "[31m[1mPOST /api/generate-resume HTTP/1.1[0m" 400 -
-2025-04-17 15:08:14,021 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-17 15:08:14,024 - __main__ - INFO - Received data for resume generation
-2025-04-17 15:08:14,024 - __main__ - INFO - Generating creative resume
-2025-04-17 15:08:14,239 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-17 15:08:16,812 - __main__ - INFO - Resume generated successfully
-2025-04-17 15:08:16,814 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:08:16] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-17 15:08:31,310 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:08:31] "[33mPOST /api/ats-check HTTP/1.1[0m" 404 -
-2025-04-17 15:08:31,966 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:08:31] "[33mGET /api/vacancies?position=&lang=ru HTTP/1.1[0m" 404 -
-2025-04-17 15:08:39,507 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:08:39] "[33mGET /templates/modern.png HTTP/1.1[0m" 404 -
-2025-04-17 15:08:39,508 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:08:39] "[33mGET /templates/classic.png HTTP/1.1[0m" 404 -
-2025-04-17 15:08:39,508 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:08:39] "[33mGET /templates/creative.png HTTP/1.1[0m" 404 -
-2025-04-17 15:08:39,510 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:08:39] "[33mGET /templates/academic.png HTTP/1.1[0m" 404 -
-2025-04-17 15:14:06,192 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:14:06] "[33mGET /templates/modern.png HTTP/1.1[0m" 404 -
-2025-04-17 15:14:06,194 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:14:06] "[33mGET /templates/classic.png HTTP/1.1[0m" 404 -
-2025-04-17 15:14:06,197 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:14:06] "[33mGET /templates/creative.png HTTP/1.1[0m" 404 -
-2025-04-17 15:14:06,198 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:14:06] "[33mGET /templates/academic.png HTTP/1.1[0m" 404 -
-2025-04-17 15:35:51,918 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:35:51] "[33mGET /templates/classic.png HTTP/1.1[0m" 404 -
-2025-04-17 15:35:51,919 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:35:51] "[33mGET /templates/modern.png HTTP/1.1[0m" 404 -
-2025-04-17 15:35:51,919 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:35:51] "[33mGET /templates/creative.png HTTP/1.1[0m" 404 -
-2025-04-17 15:35:51,925 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:35:51] "[33mGET /templates/academic.png HTTP/1.1[0m" 404 -
-2025-04-17 15:35:57,523 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-17 15:35:57,526 - __main__ - INFO - Received data for resume generation
-2025-04-17 15:35:57,529 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:35:57] "[31m[1mPOST /api/generate-resume HTTP/1.1[0m" 400 -
-2025-04-17 15:36:01,573 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:01] "[33mGET /templates/modern.png HTTP/1.1[0m" 404 -
-2025-04-17 15:36:01,574 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:01] "[33mGET /templates/classic.png HTTP/1.1[0m" 404 -
-2025-04-17 15:36:01,614 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:01] "[33mGET /templates/academic.png HTTP/1.1[0m" 404 -
-2025-04-17 15:36:01,657 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:01] "[33mGET /templates/creative.png HTTP/1.1[0m" 404 -
-2025-04-17 15:36:03,157 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:03] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
-2025-04-17 15:36:03,159 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:03] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
-2025-04-17 15:36:03,161 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-04-17 15:36:05,296 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:05] "[33mGET /templates/modern.png HTTP/1.1[0m" 404 -
-2025-04-17 15:36:05,298 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:05] "[33mGET /templates/classic.png HTTP/1.1[0m" 404 -
-2025-04-17 15:36:05,299 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:05] "[33mGET /templates/creative.png HTTP/1.1[0m" 404 -
-2025-04-17 15:36:05,300 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:05] "[33mGET /templates/academic.png HTTP/1.1[0m" 404 -
-2025-04-17 15:36:05,763 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-04-17 15:36:15,397 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-17 15:36:15,401 - __main__ - INFO - Received data for resume generation
-2025-04-17 15:36:15,401 - __main__ - INFO - Generating standard resume
-2025-04-17 15:36:15,655 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-17 15:36:18,779 - __main__ - INFO - Resume generated successfully
-2025-04-17 15:36:18,781 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:18] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-17 15:36:26,894 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:26] "[33mPOST /api/ats-check HTTP/1.1[0m" 404 -
-2025-04-17 15:36:28,590 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:28] "[33mGET /api/vacancies?position=&lang=ru HTTP/1.1[0m" 404 -
-2025-04-17 15:36:51,684 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-17 15:36:51,686 - __main__ - INFO - Received data for resume generation
-2025-04-17 15:36:51,687 - __main__ - INFO - Generating standard resume
-2025-04-17 15:36:51,896 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-17 15:36:55,198 - __main__ - INFO - Resume generated successfully
-2025-04-17 15:36:55,201 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:36:55] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-17 15:39:06,817 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-17 15:39:06,821 - __main__ - INFO - Received data for resume generation
-2025-04-17 15:39:06,821 - __main__ - INFO - Generating standard resume
-2025-04-17 15:39:07,004 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-17 15:39:09,722 - __main__ - INFO - Resume generated successfully
-2025-04-17 15:39:09,726 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:39:09] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-17 15:39:16,910 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-17 15:39:16,913 - __main__ - INFO - Received data for resume generation
-2025-04-17 15:39:16,913 - __main__ - INFO - Generating standard resume
-2025-04-17 15:39:17,090 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-17 15:39:19,820 - __main__ - INFO - Resume generated successfully
-2025-04-17 15:39:19,824 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:39:19] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-17 15:39:56,431 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-17 15:39:56,438 - __main__ - INFO - Received data for resume generation
-2025-04-17 15:39:56,438 - __main__ - INFO - Generating standard resume
-2025-04-17 15:39:56,629 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-17 15:39:59,396 - __main__ - INFO - Resume generated successfully
-2025-04-17 15:39:59,399 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:39:59] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-17 15:40:09,039 - __main__ - INFO - Received request to /api/generate-resume
-2025-04-17 15:40:09,046 - __main__ - INFO - Received data for resume generation
-2025-04-17 15:40:09,049 - __main__ - INFO - Generating standard resume
-2025-04-17 15:40:09,244 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
-2025-04-17 15:40:11,985 - __main__ - INFO - Resume generated successfully
-2025-04-17 15:40:11,987 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:40:11] "POST /api/generate-resume HTTP/1.1" 200 -
-2025-04-17 15:40:19,167 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:40:19] "[33mPOST /api/ats-check HTTP/1.1[0m" 404 -
-2025-04-17 15:40:19,571 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:40:19] "[33mGET /api/vacancies?position=Frontend%20Developer&lang=ru HTTP/1.1[0m" 404 -
-2025-04-17 15:40:20,603 - __main__ - INFO - Received request to /api/download-resume
-2025-04-17 15:40:22,959 - __main__ - INFO - File generated successfully: /var/folders/gf/yw7m6ypx0xb5dj2lr2xjt9ch0000gn/T/tmp92a80eib.pdf
-2025-04-17 15:40:22,963 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:40:22] "POST /api/download-resume HTTP/1.1" 200 -
-2025-04-17 15:40:25,936 - __main__ - INFO - Received request to /api/download-resume
-2025-04-17 15:40:25,984 - __main__ - INFO - File generated successfully: /var/folders/gf/yw7m6ypx0xb5dj2lr2xjt9ch0000gn/T/tmpvlvqtrza.docx
-2025-04-17 15:40:25,986 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:40:25] "POST /api/download-resume HTTP/1.1" 200 -
-2025-04-17 15:40:29,713 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:40:29] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
-2025-04-17 15:40:29,714 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:40:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-04-17 15:40:29,719 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:40:29] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
-2025-04-17 15:40:43,799 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:40:43] "[33mPOST /api/export HTTP/1.1[0m" 404 -
-2025-04-17 15:40:44,071 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 15:40:44] "[33mPOST /api/export HTTP/1.1[0m" 404 -
+ * Running on http://192.168.0.19:5000
+2025-04-18 09:42:24,459 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 09:42:26,575 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-18 09:42:26,575 - __main__ - INFO - Received data for resume generation
+2025-04-18 09:42:26,575 - __main__ - INFO - Generating standard resume
+2025-04-18 09:42:26,766 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-18 09:42:29,901 - __main__ - INFO - Resume generated successfully
+2025-04-18 09:42:29,903 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 09:42:29] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-18 09:59:55,306 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 09:59:55] "[33mGET /templates/modern.png HTTP/1.1[0m" 404 -
+2025-04-18 09:59:55,307 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 09:59:55] "[33mGET /templates/classic.png HTTP/1.1[0m" 404 -
+2025-04-18 09:59:55,308 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 09:59:55] "[33mGET /templates/creative.png HTTP/1.1[0m" 404 -
+2025-04-18 09:59:55,310 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 09:59:55] "[33mGET /templates/academic.png HTTP/1.1[0m" 404 -
+2025-04-18 09:59:59,290 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-18 09:59:59,292 - __main__ - INFO - Received data for resume generation
+2025-04-18 09:59:59,292 - __main__ - INFO - Generating standard resume
+2025-04-18 09:59:59,541 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-18 10:00:03,726 - __main__ - INFO - Resume generated successfully
+2025-04-18 10:00:03,729 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:00:03] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-18 10:00:13,000 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-18 10:00:13,001 - __main__ - INFO - Received data for resume generation
+2025-04-18 10:00:13,001 - __main__ - INFO - Generating standard resume
+2025-04-18 10:00:13,178 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-18 10:00:16,947 - __main__ - INFO - Resume generated successfully
+2025-04-18 10:00:16,949 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:00:16] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-18 10:00:22,142 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-18 10:00:22,143 - __main__ - INFO - Received data for resume generation
+2025-04-18 10:00:22,143 - __main__ - INFO - Generating creative resume
+2025-04-18 10:00:22,335 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-18 10:00:25,950 - __main__ - INFO - Resume generated successfully
+2025-04-18 10:00:25,951 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:00:25] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-18 10:00:27,644 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-18 10:00:27,645 - __main__ - INFO - Received data for resume generation
+2025-04-18 10:00:27,645 - __main__ - INFO - Generating creative resume
+2025-04-18 10:00:27,833 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-18 10:00:32,575 - __main__ - INFO - Resume generated successfully
+2025-04-18 10:00:32,577 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:00:32] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-18 10:11:39,011 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:11:39] "[33mGET /templates/modern.png HTTP/1.1[0m" 404 -
+2025-04-18 10:11:39,012 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:11:39] "[33mGET /templates/classic.png HTTP/1.1[0m" 404 -
+2025-04-18 10:11:39,012 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:11:39] "[33mGET /templates/creative.png HTTP/1.1[0m" 404 -
+2025-04-18 10:11:39,012 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:11:39] "[33mGET /templates/academic.png HTTP/1.1[0m" 404 -
+2025-04-18 10:11:45,812 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-18 10:11:45,814 - __main__ - INFO - Received data for resume generation
+2025-04-18 10:11:45,814 - __main__ - INFO - Generating standard resume
+2025-04-18 10:11:46,019 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-18 10:11:50,801 - __main__ - INFO - Resume generated successfully
+2025-04-18 10:11:50,804 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:11:50] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-18 10:12:02,676 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-18 10:12:02,677 - __main__ - INFO - Received data for resume generation
+2025-04-18 10:12:02,677 - __main__ - INFO - Generating functional resume
+2025-04-18 10:12:02,842 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-18 10:12:06,682 - __main__ - INFO - Resume generated successfully
+2025-04-18 10:12:06,683 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:12:06] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-18 10:12:11,942 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-18 10:12:11,943 - __main__ - INFO - Received data for resume generation
+2025-04-18 10:12:11,943 - __main__ - INFO - Generating functional resume
+2025-04-18 10:12:12,122 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-18 10:12:15,594 - __main__ - INFO - Resume generated successfully
+2025-04-18 10:12:15,595 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:12:15] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-18 10:12:17,856 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-18 10:12:17,857 - __main__ - INFO - Received data for resume generation
+2025-04-18 10:12:17,857 - __main__ - INFO - Generating functional resume
+2025-04-18 10:12:18,045 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-18 10:12:21,430 - __main__ - INFO - Resume generated successfully
+2025-04-18 10:12:21,433 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:12:21] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-18 10:12:22,626 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-18 10:12:22,626 - __main__ - INFO - Received data for resume generation
+2025-04-18 10:12:22,627 - __main__ - INFO - Generating functional resume
+2025-04-18 10:12:22,821 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-18 10:12:26,178 - __main__ - INFO - Resume generated successfully
+2025-04-18 10:12:26,180 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:12:26] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-18 10:12:40,880 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-18 10:12:40,881 - __main__ - INFO - Received data for resume generation
+2025-04-18 10:12:40,881 - __main__ - INFO - Generating creative resume
+2025-04-18 10:12:41,080 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-18 10:12:45,253 - __main__ - INFO - Resume generated successfully
+2025-04-18 10:12:45,255 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:12:45] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-18 10:13:35,119 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:13:35] "[33mGET /api/vacancies?position=Маркетолог&lang=ru HTTP/1.1[0m" 404 -
+2025-04-18 10:13:36,321 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:13:36] "[33mPOST /api/ats-check HTTP/1.1[0m" 404 -
+2025-04-18 10:47:54,533 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:47:54] "[33mGET /templates/modern.png HTTP/1.1[0m" 404 -
+2025-04-18 10:47:54,533 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:47:54] "[33mGET /templates/classic.png HTTP/1.1[0m" 404 -
+2025-04-18 10:47:54,535 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:47:54] "[33mGET /templates/creative.png HTTP/1.1[0m" 404 -
+2025-04-18 10:47:54,537 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:47:54] "[33mGET /templates/academic.png HTTP/1.1[0m" 404 -
+2025-04-18 10:47:58,460 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-18 10:47:58,465 - __main__ - INFO - Received data for resume generation
+2025-04-18 10:47:58,465 - __main__ - INFO - Generating standard resume
+2025-04-18 10:47:58,739 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-18 10:48:02,326 - __main__ - INFO - Resume generated successfully
+2025-04-18 10:48:02,328 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:48:02] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-18 10:48:06,327 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-18 10:48:06,327 - __main__ - INFO - Received data for resume generation
+2025-04-18 10:48:06,327 - __main__ - INFO - Generating creative resume
+2025-04-18 10:48:06,516 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-18 10:48:10,181 - __main__ - INFO - Resume generated successfully
+2025-04-18 10:48:10,182 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:48:10] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-18 10:48:14,647 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-18 10:48:14,647 - __main__ - INFO - Received data for resume generation
+2025-04-18 10:48:14,647 - __main__ - INFO - Generating creative resume
+2025-04-18 10:48:14,838 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-18 10:48:18,821 - __main__ - INFO - Resume generated successfully
+2025-04-18 10:48:18,822 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:48:18] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-18 10:48:22,685 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-18 10:48:22,685 - __main__ - INFO - Received data for resume generation
+2025-04-18 10:48:22,686 - __main__ - INFO - Generating creative resume
+2025-04-18 10:48:22,875 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-18 10:48:26,964 - __main__ - INFO - Resume generated successfully
+2025-04-18 10:48:26,966 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:48:26] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-18 10:48:32,763 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-18 10:48:32,764 - __main__ - INFO - Received data for resume generation
+2025-04-18 10:48:32,764 - __main__ - INFO - Generating creative resume
+2025-04-18 10:48:32,949 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-18 10:48:36,946 - __main__ - INFO - Resume generated successfully
+2025-04-18 10:48:36,947 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:48:36] "POST /api/generate-resume HTTP/1.1" 200 -
+2025-04-18 10:51:06,584 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:51:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-18 10:51:06,585 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:51:06] "[33mGET /templates/modern.png HTTP/1.1[0m" 404 -
+2025-04-18 10:51:06,587 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:51:06] "[33mGET /templates/classic.png HTTP/1.1[0m" 404 -
+2025-04-18 10:51:06,587 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:51:06] "[33mGET /templates/creative.png HTTP/1.1[0m" 404 -
+2025-04-18 10:51:06,588 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:51:06] "[33mGET /templates/academic.png HTTP/1.1[0m" 404 -
+2025-04-18 10:51:15,157 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-18 10:51:15,158 - __main__ - INFO - Received data for resume generation
+2025-04-18 10:51:15,160 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:51:15] "[31m[1mPOST /api/generate-resume HTTP/1.1[0m" 400 -
+2025-04-18 10:51:21,475 - __main__ - INFO - Received request to /api/generate-resume
+2025-04-18 10:51:21,477 - __main__ - INFO - Received data for resume generation
+2025-04-18 10:51:21,477 - __main__ - INFO - Generating standard resume
+2025-04-18 10:51:21,671 - ai_generator - INFO - Sending request to Yandex GPT (attempt 1)
+2025-04-18 10:51:25,731 - __main__ - INFO - Resume generated successfully
+2025-04-18 10:51:25,732 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 10:51:25] "POST /api/generate-resume HTTP/1.1" 200 -

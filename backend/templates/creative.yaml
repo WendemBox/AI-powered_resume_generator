@@ -1,0 +1,31 @@
+id: creative
+name: Креативный
+description: Яркий дизайн для творческих профессий
+fields:
+  sections:
+    - name: about
+      title: Обо мне
+      priority: 1
+      style: highlighted
+    - name: skills
+      title: Что я умею
+      priority: 2
+      columns: 3
+    - name: achievements
+      title: Мои лучшие проекты
+      priority: 3
+    - name: experience
+      title: Где я работал
+      priority: 4
+    - name: education
+      title: Что я изучал
+      priority: 5
+styles:
+  primaryColor: "#ff6b6b"
+  secondaryColor: "#6bd5e1"
+  font: "Segoe UI, sans-serif"
+  spacing: 1.8
+features:
+  - Нестандартная структура
+  - Возможность добавления фото
+  - Акцент на визуальную подачу
